@@ -643,6 +643,35 @@
       ],
       "precise": 26,
       "abandonnee": false
+    },
+    {
+      "n": 28,
+      "sujet": "equipe",
+      "decision": "Les réunions servent à confronter plusieurs agents entre eux, pas seulement à recueillir des avis.",
+      "raison": "Souhait de l'utilisateur : faire émerger les désaccords entre métiers avant de décider.",
+      "ecartees": [
+        {
+          "option": "Réunion = simple consultation d'avis",
+          "raison": "L'utilisateur veut une vraie confrontation."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Protocole anti-conformisme : 1er tour à l'aveugle, rôles différents, désaccords listés sans vote à la majorité",
+          "raison": "Les études sur le débat entre LLM montrent que les agents ont tendance à s'aligner et que l'exactitude peut baisser (arXiv 2509.05396, 2606.00820)."
+        },
+        {
+          "piste": "Format procès : un agent défend l'option, un autre l'attaque",
+          "raison": "Utile quand il y a deux options claires."
+        },
+        {
+          "piste": "Un contradicteur permanent dans l'entreprise, convoqué aux grosses décisions",
+          "raison": "Garantit qu'une décision est toujours attaquée."
+        }
+      ],
+      "question_ouverte": "Qui tranche à la fin d'une confrontation : l'utilisateur ou le chef ?",
+      "precise": 27,
+      "abandonnee": false
     }
   ],
   "criteres": [],
