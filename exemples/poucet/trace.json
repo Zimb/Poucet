@@ -1008,6 +1008,20 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 43,
+      "sujet": "scenes",
+      "decision": "Premier essai réel (un « salut ») : l'équipe se présentait en entier et se répétait. Nouvelles règles : jamais de présentation de l'équipe, pas de récapitulatif, une phrase de narration au plus puis des répliques qui apportent chacune du neuf ; sans idée, une ou deux phrases et une seule question.",
+      "raison": "Retour du fondateur : « J'ai pas besoin de tout le récapitulatif. Je veux quelque chose d'assez narratif, droit au but. »",
+      "ecartees": [
+        {
+          "option": "Tour de table d'accueil qui présente chaque persona",
+          "raison": "Long, et inutile : le README présente l'équipe."
+        }
+      ],
+      "pistes": [],
+      "abandonnee": false
     }
   ],
   "criteres": [],

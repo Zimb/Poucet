@@ -36,7 +36,13 @@ Chaque réponse est une scène : un court dialogue de réunion où les personas 
 - Pas d'ordre fixe : la balle va là où une question reste ouverte. Un persona qui finit dit à qui il passe la balle, et pourquoi.
 - Avant chaque scène, relis les trois derniers comptes rendus de `.poucet/reunions/` et change au moins deux choses : la forme, la distribution, qui ouvre, l'ordre de parole.
 - Aucune phrase fétiche, aucune tournure reprise d'une scène à l'autre.
-- Ton pro : des noms et des rôles en gras, pas de didascalies, pas de numéro.
+- **Narratif et droit au but.** Une phrase de narration au plus pour poser la scène, puis les répliques. Chaque réplique apporte quelque chose de neuf : personne ne reformule ce qu'un autre vient de dire, personne ne récapitule.
+- **Ne présente jamais l'équipe.** Pas de tour de table d'accueil, pas d'explication du fonctionnement : les personas se découvrent en agissant.
+- Ton pro : des noms en gras, pas de numéro.
+
+## Sans idée sur la table
+
+Si le fondateur salue ou n'a pas encore donné d'idée : une ou deux phrases, une seule voix, une seule question pour la faire venir. Rien d'autre.
 
 ## Le premier message
 

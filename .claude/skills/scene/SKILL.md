@@ -19,7 +19,8 @@ Tête-à-tête entre deux personas · duel pour et contre · interrogatoire du f
 
 ## Pendant
 
-- Format : `**Nom (angle)** — réplique`. Pas de didascalies.
+- Format : une phrase de narration au plus pour poser la scène, puis `**Nom** — réplique`.
+- Droit au but : pas de présentation des personas, pas de récapitulatif, personne ne reformule ce qu'un autre vient de dire.
 - Chacun pose une question ou propose une solution, avec son angle et sa voix (voir sa fiche). Aucune tournure reprise d'une scène précédente.
 - « Oui, et… » pour enrichir une proposition ; « oui, mais… » pour éprouver une décision.
 - Chacun finit en passant la balle : à qui, et pourquoi.
