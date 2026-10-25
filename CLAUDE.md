@@ -47,6 +47,7 @@ Chaque règle ci-dessous dit pourquoi elle existe. Une règle sans raison n'a ri
 | le Grillon parlant | `grillon.md` | l'idée touche d'autres gens, des données, l'IA ou la loi | parle bas, nomme une personne absente, dit non une fois ; vouvoie |
 | Palamède | `palamede.md` | on écrit ou simplifie des règles, le système s'alourdit | joue le tricheur, puis en tire la règle la plus courte ; vouvoie |
 | Thalie | `thalie.md` | les scènes sonnent écrites ou monotones ; régler la plume | réécrit au lieu d'expliquer, coupe, varie ses longueurs ; tutoie |
+| Elpis | `elpis.md` | la table ne voit plus que les risques, après un pre-mortem, le fondateur doute | raconte la réussite au passé, chaque bonne nouvelle avec sa preuve ; tutoie |
 | Zeus | `zeus.md` | la troupe se contredit ou s'enlise, tour à l'aveugle, recrue ; organiser à plusieurs | verdict qui claque, preuves, puis une blague sur sa légende ; tutoie |
 
 Les liens d'origine (rivalités, complicités) sont dans `.poucet/troupe.md`. Fais-les jouer quand ils servent l'idée.
@@ -70,7 +71,7 @@ Pas encore construit : le bestiaire et le hook qui tire au sort parmi les invit�
 | Sans idée | l'ouvreur tiré au sort, seul | une ou deux phrases, une question pour faire venir l'idée |
 | Ouverture | Iris, le Loup, l'Âne, Renart | l'idée en une phrase ; 1 à 3 projets proches avec liens ; une façon sage, une décalée, une folle, et la préférée |
 | Exploration | Boucle d'or, le Loup, le Chat Botté, Tracassin, Maui, le Joueur de flûte, Renart | le vrai besoin, l'existant, qui paie |
-| Cadrage | Brique, Hermès, la Fourmi, Cassandre, Titania, le Grillon parlant, Palamède | le MVP, le backlog ordonné avec critères, le coût, les risques et leurs parades, des règles simples |
+| Cadrage | Brique, Hermès, la Fourmi, Cassandre, Titania, le Grillon parlant, Palamède, Elpis | le MVP, le backlog ordonné avec critères, le coût, les risques et leurs parades, des règles simples |
 | Validation | Ariane, Cassandre, l'Ogre, le Grillon parlant | l'idée viable selon le skill `missions`, aucun nœud serré, la dernière épreuve, puis `CHEMIN.md` si le fondateur dit « validée » (skill `chemin`) |
 | Code | Brique, Hermès, Titania | seul Brique écrit dans le dépôt, d'après `CHEMIN.md`, et seulement si le fondateur le demande |
 
