@@ -5,6 +5,15 @@ set -u
 racine="${CLAUDE_PROJECT_DIR:-$(cd "$(dirname "$0")/../.." && pwd)}"
 cd "$racine" || exit 0
 
+# Dans le modèle (Zimb/Poucet), la séance vit en local : git ne voit pas .poucet/,
+# pour que main reste l'état où personne ne connaît le fondateur.
+# Pour modifier volontairement ces fichiers du modèle : git update-index --no-skip-worktree .poucet/<fichier>
+if git remote get-url origin 2>/dev/null | grep -qi 'Zimb/Poucet'; then
+  git ls-files -z .poucet 2>/dev/null | xargs -0 -r git update-index --skip-worktree 2>/dev/null
+  exclude="$(git rev-parse --git-dir 2>/dev/null)/info/exclude"
+  grep -qx '.poucet/' "$exclude" 2>/dev/null || echo '.poucet/' >> "$exclude" 2>/dev/null
+fi
+
 trace=".poucet/trace.json"
 etapes=$(grep -c '"n"[[:space:]]*:' "$trace" 2>/dev/null || true)
 etapes=${etapes:-0}

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Stop : Poucet tient la mémoire de la troupe.
-# Dans un fork, il committe et pousse .poucet/ sur main à chaque fin de réponse,
+# Dans un fork, il committe .poucet/ à chaque fin de réponse et le pousse sur main en arrière-plan,
 # et rappelle le skill evolution quand la troupe n'a pas bougé depuis trois réponses.
 # Dans le modèle (Zimb/Poucet), il ne fait rien : main reste l'état où personne ne se connaît.
 set -u
@@ -20,7 +20,9 @@ fi
 
 if [ -n "$(git status --porcelain -- .poucet 2>/dev/null)" ]; then
   git add .poucet && git commit -q -m "Poucet : mémoire de la troupe" >/dev/null 2>&1
-  { git fetch -q origin main && git merge -q --no-edit origin/main && git push -q origin HEAD:main; } >/dev/null 2>&1 || true
+  # Le push part en arrière-plan : la fin de réponse n'attend pas le réseau.
+  ( { git fetch -q origin main && git merge -q --no-edit origin/main && git push -q origin HEAD:main; } >/dev/null 2>&1 || true ) &
+  disown 2>/dev/null || true
 fi
 
 if [ "$n" -ge 3 ] && ! printf '%s' "$entree" | grep -q '"stop_hook_active"[[:space:]]*:[[:space:]]*true'; then
