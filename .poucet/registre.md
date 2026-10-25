@@ -19,3 +19,5 @@ Tenu par Poucet. Marraine y ajoute les recrues, après accord du fondateur.
 | Tracassin | Argent rapide et facile | `.claude/agents/tracassin.md` | 2026-10-25 | Demandé par le fondateur ; épreuve réussie (5/5) |
 | Titania | Excellence, état de l'art | `.claude/agents/titania.md` | 2026-10-25 | Demandée par le fondateur ; épreuve réussie (5/5) |
 | Shéhérazade | Ce qui fait revenir : mémoire, affinités, dévoilement | `.claude/agents/sheherazade.md` | 2026-10-25 | Proposée par Marraine : la mémoire de la troupe n'avait pas de gardienne ; épreuve ratée puis réussie à la repasse (5/5) |
+| Iris | Porte-parole du fondateur | `.claude/agents/iris.md` | 2026-10-25 | Demandée par le fondateur : quelqu'un qui présente son idée pour lui ; épreuve réussie (5/5) |
+| Hermès | Product owner, backlog | `.claude/agents/hermes.md` | 2026-10-25 | Demandé par le fondateur : un product owner ; épreuve ratée (un élément sans valeur) puis réussie à la repasse (5/5) |
