@@ -1120,6 +1120,25 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 50,
+      "sujet": "technique",
+      "decision": "Proposition : les recrues naissent en direct pendant la séance, sans PR ; chaque fork récupère au démarrage la réserve de personas du dépôt d'origine (seulement la réserve, jamais CLAUDE.md ni les fiches locales). Les contributions venues des forks passent par le fondateur avant d'entrer dans la réserve partagée. En attente de l'accord du fondateur.",
+      "raison": "Le fondateur veut que les personas s'adaptent en direct sans attendre de PR, ou que les forks se mettent à jour depuis le dépôt dans Claude. Cassandre et le Loup refusent l'entrée sans relecture du texte d'inconnus dans les sessions de tous (injection de consignes).",
+      "ecartees": [
+        {
+          "option": "Contributions des forks fusionnées automatiquement dans la réserve partagée",
+          "raison": "N'importe qui pourrait glisser des consignes dans toutes les séances des forks."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Une branche main stable sur le dépôt d'origine, servie aux forks",
+          "raison": "La branche par défaut actuelle est une branche de travail."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
