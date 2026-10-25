@@ -821,6 +821,40 @@
       ],
       "note": "La question de l'étape 34 (business ou réalisation) penche vers le business, sous forme de sim ; Boucle d'or reste à embaucher.",
       "abandonnee": false
+    },
+    {
+      "n": 36,
+      "sujet": "technique",
+      "decision": "En attente : état de la recherche sur la qualité des systèmes multi-agents, et idées pour améliorer réellement les résultats de l'entreprise Poucet.",
+      "raison": "Le fondateur demande si une entreprise multi-agent avec profils augmente vraiment la qualité.",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Les profils (personas) seuls n'améliorent pas la justesse ; le gain vient des contextes séparés, de la vérification et des fiches corrigées",
+          "raison": "arXiv 2311.10054 (personas), Anthropic multi-agent research system (+90 % en recherche, ~15x tokens), arXiv 2503.13657 (MAST : échecs surtout dus à la spécification, au désalignement entre agents et à la vérification)."
+        },
+        {
+          "piste": "Un seul agent écrit, les autres conseillent",
+          "raison": "Cognition, 2025 puis 2026 : les essaims d'agents qui écrivent tous restent fragiles."
+        },
+        {
+          "piste": "Match retour : même idée, Claude seul contre la troupe, jugé à l'aveugle par le fondateur, recadrages comptés",
+          "raison": "Sans mesure, le gain de la troupe reste une croyance."
+        },
+        {
+          "piste": "Citations vérifiées par machine : un script ouvre chaque lien cité par le Loup ou Boucle d'or",
+          "raison": "Les clients simulés inventent des sources plausibles (épreuve de Boucle d'or)."
+        },
+        {
+          "piste": "Vraie diversité : mélanger les modèles (local Ollama et Claude) au lieu de changer seulement les noms",
+          "raison": "Des agents homogènes convergent (étape 28)."
+        },
+        {
+          "piste": "Nuit d'idées : surgénérer, dédoublonner par embeddings, classer par duels",
+          "raison": "arXiv 2409.04109 : environ 200 idées uniques sur 4000 ; Meincke et al. : la chaîne de pensée augmente la diversité."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
