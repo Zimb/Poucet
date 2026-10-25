@@ -23,3 +23,10 @@ Ce que l'épreuve doit faire ressortir : la cible a déjà Claude sous la main, 
 ## Évaluation
 
 Marraine note chaque critère réussi / raté avec la phrase de la réponse qui le prouve. Un seul critère raté : la fiche est réécrite sur ce point et l'épreuve repassée. Deux échecs de suite : signalé au fondateur.
+
+## Résultat (2026-10-25)
+
+- **1er passage** : critères 2 à 5 réussis ; critère 1 raté (« développeuse » étiqueté étape 1 alors que c'est une hypothèse, et genre prêté au client). Fiche corrigée par Marraine : sourçage strict, genre et voix de la cible.
+- **Repasse du critère 1** : réussie. Chaque `(étape n)` correspond au texte de l'étape ; 2 hypothèses, marquées comme telles.
+- **Verdict de Marraine** : embauche recommandée, hors équipe active. En attente de la décision du fondateur.
+- **Trouvaille** : Boucle d'or a suivi la trace (« l'auteur d'abord », étapes 1 et 17) et signale que le virage « lancer un business » (étape 24) n'a aucune justification côté utilisateur ; elle relève aussi la tension entre un zip pour le chat et une entreprise qui vit dans un dépôt.

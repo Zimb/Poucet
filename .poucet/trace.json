@@ -778,6 +778,21 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 34,
+      "sujet": "equipe",
+      "decision": "Premier recrutement testé : Marraine (RH, équipe active) a écrit la fiche et l'épreuve de Boucle d'or (cliente simulée). Épreuve réussie après une correction de la fiche ; embauche recommandée, en attente du fondateur.",
+      "raison": "Test du mécanisme fiche + épreuve + évaluation + correction (étape 32).",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Critère de recrutement raté par défaut : sort du périmètre, ignore le fil, travail générique, ne sait pas dire quand il a fini",
+          "raison": "Le fondateur n'a pas encore précisé ; écrit dans la fiche de Marraine."
+        }
+      ],
+      "question_ouverte": "Boucle d'or signale que le virage « lancer un business » (étape 24) ne s'appuie sur aucun besoin exprimé par la cible (l'auteur, étapes 1 et 17), et que le zip pour le chat ne porte pas une entreprise qui vit dans un dépôt. À trancher par le fondateur : changer la cible, ou revoir le virage.",
+      "abandonnee": false
     }
   ],
   "criteres": [],
@@ -792,7 +807,13 @@
     "ressources": 0.4,
     "succes": 0.6
   },
-  "decisions_par_defaut": [],
+  "decisions_par_defaut": [
+    {
+      "etape": 34,
+      "decision": "Définition d'un recrutement raté écrite par défaut dans la fiche de Marraine.",
+      "raison": "Question posée au fondateur restée sans réponse."
+    }
+  ],
   "verdict": null,
   "fin_phase_1": {
     "raison": "15 questions atteintes",
