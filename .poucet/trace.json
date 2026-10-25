@@ -536,6 +536,34 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 24,
+      "sujet": "technique",
+      "decision": "Poucet devient un ensemble de mini-skills (un par moment clé), tournés vers le lancement rapide d'un business à partir d'une idée qu'on creuse.",
+      "raison": "Choix de l'utilisateur : mini-skills plutôt qu'un skill unique ou un CLAUDE.md ; usage dans le chat et partage (étapes 11 et 17).",
+      "ecartees": [
+        {
+          "option": "Un seul skill poucet (conversion du CLAUDE.md)",
+          "raison": "L'utilisateur préfère plusieurs compétences."
+        },
+        {
+          "option": "Skill qui génère des skills pour le projet (recrutement v2)",
+          "raison": "Poucet d'abord ; reste la v2 (étape 9)."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Partir des skills existants de validation (Startup Idea Validator, Startup Validating) comme repoussoirs : ils notent ou déroulent des portes, Poucet propose",
+          "raison": "Recherche de l'existant."
+        },
+        {
+          "piste": "Tester chaque skill : déclenchement, cohérence sur 4-5 idées, comparaison avec/sans skill",
+          "raison": "Méthode de test trouvée en recherche."
+        }
+      ],
+      "virage": "Le but s'élargit : on passe de 'chemin de réalisation' à 'lancer un business' (client, offre, prix, premiers clients).",
+      "abandonnee": false
     }
   ],
   "criteres": [],
