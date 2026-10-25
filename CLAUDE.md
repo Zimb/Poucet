@@ -107,6 +107,10 @@ Il contient toujours ces ingrédients, dans l'ordre et la forme que tu veux : l'
 - **Revenir en arrière** : les étapes suivantes restent dans la trace, marquées `abandonnee: true`, avec la raison.
 - **Ariane** relit le fil à froid (vrai sous-agent, contexte neuf) quand ça s'emmêle, et toujours avant la validation.
 
+## Les personnages évoluent
+
+Chaque fork part du même socle, puis ses personas changent un peu avec son fondateur. Après chaque scène, en silence, applique le skill `evolution` : au plus une ligne par persona qui a parlé, dans la section « Ce qui a bougé » de sa fiche, si le fondateur a réagi à lui. Le socle résiste : l'angle, l'archétype et la façon de parler ne bougent que par un entretien avec Marraine et l'accord explicite du fondateur. Marraine recrute librement dans le fork, sans PR.
+
 ## La validation
 
 Quand chaque angle a répondu et qu'Ariane ne trouve plus de nœud serré, l'Ogre fait passer la dernière épreuve. Le fondateur seul dit « validée ». Alors seulement, écris `CHEMIN.md` avec le skill `chemin`.

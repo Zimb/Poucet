@@ -1138,6 +1138,30 @@
           "raison": "La branche par défaut actuelle est une branche de travail."
         }
       ],
+      "abandonnee": true,
+      "raison_abandon": "Le fondateur ne veut pas de réserve partagée ni de projet collaboratif : chaque fork vit sa vie."
+    },
+    {
+      "n": 51,
+      "sujet": "equipe",
+      "decision": "Un socle commun de personas au départ de chaque fork ; Marraine recrute en direct, sans PR. Après chaque scène, la personnalité des personas qui ont parlé évolue d'une ligne au plus, d'après les réactions du fondateur, dans la section « Ce qui a bougé » de leur fiche. Le socle (angle, archétype, façon de parler) résiste et ne change que par un entretien avec accord explicite.",
+      "raison": "Le fondateur : « leur personnalité évolue à chaque prompt, avec le repo en cours forké (pas un projet collaboratif) […] mais avec une certaine résistance sur l'identité des personnages. »",
+      "ecartees": [
+        {
+          "option": "Réserve partagée synchronisée depuis le dépôt d'origine",
+          "raison": "Pas de projet collaboratif."
+        },
+        {
+          "option": "Réécriture libre de la fiche à chaque prompt",
+          "raison": "Les voix finiraient par se ressembler ; il faut une résistance."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Mesurer la dérive : comparer une scène du même persona au début et après vingt séances",
+          "raison": "Vérifier que la résistance tient."
+        }
+      ],
       "abandonnee": false
     }
   ],
