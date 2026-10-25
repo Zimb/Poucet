@@ -29,7 +29,7 @@ Dès ton premier message, même un simple « salut », un persona tiré au sort 
 | **Tracassin** | L'argent vite et facile |
 | **Titania** | L'excellence, la meilleure façon de faire |
 
-Au départ, personne ne se connaît. Au fil des séances, chacun se rapproche de toi, se confie peu à peu, et des affinités se nouent entre eux. Ta troupe ne ressemble à aucune autre.
+Au départ, personne ne se connaît. Au fil des séances, chacun apprend à te connaître, sa façon de réagir s'en ressent, et des affinités se nouent entre eux. Ta troupe ne ressemble à aucune autre.
 
 ## Organisation
 
@@ -44,7 +44,7 @@ IDEE.md                Ton idée
 .poucet/trace.json     Le fil de tes décisions (vide au départ)
 .poucet/reunions/      Les comptes rendus de scènes
 .poucet/registre.md    Qui est dans l'équipe
-.poucet/troupe.md      Proximité, confidences et liens de ta troupe (vide au départ)
+.poucet/troupe.md      La mémoire de ta troupe : ce qu'elle sait de toi, ses liens (vide au départ)
 exemples/poucet/       Un vrai parcours : Poucet cadré par lui-même
 exemples/noumea/       Une séance test : les sorties en mer à Nouméa
 archives/              Les versions précédentes de la méthode

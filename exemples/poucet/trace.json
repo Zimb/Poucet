@@ -1195,7 +1195,8 @@
           "raison": "Le fondateur voit la troupe vieillir avec lui."
         }
       ],
-      "abandonnee": false
+      "abandonnee": true,
+      "raison_abandon": "Étape 57 : plus de secrets ni de confidences par paliers ; la troupe garde sa mémoire et ses liens."
     },
     {
       "n": 54,
@@ -1238,6 +1239,24 @@
         {
           "option": "Branche de session recopiée sur main",
           "raison": "Double travail inutile."
+        }
+      ],
+      "pistes": [],
+      "abandonnee": false
+    },
+    {
+      "n": 57,
+      "sujet": "equipe",
+      "decision": "Personnages riches sans tics : quatre couches (identité, personnalité, caractère, attitude), de la plus solide à la plus souple. Plus de secrets dans les fiches. L'attitude naît de la scène, du fil de la conversation et de la mémoire de la troupe (.poucet/troupe.md : ce que chacun sait du fondateur, familiarité, liens). Le dépôt change à chaque prompt. Objectif principal : l'efficacité.",
+      "raison": "Le fondateur : « Pas besoin de secret, il serait lu dans le code. Gardons l'objectif principal, être efficace. […] l'idée que le code change à chaque prompt j'aime bien […] la mémoire et le fil de conversation […] Je ne veux pas de tics, c'est énervant. Des personnages riches. »",
+      "ecartees": [
+        {
+          "option": "Secrets révélés par paliers",
+          "raison": "Lisibles dans le code, ils ne surprennent personne."
+        },
+        {
+          "option": "Palettes de tics",
+          "raison": "Énervant à la lecture."
         }
       ],
       "pistes": [],
