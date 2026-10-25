@@ -46,6 +46,7 @@ Chaque règle ci-dessous dit pourquoi elle existe. Une règle sans raison n'a ri
 | Renart | `renart.md` | l'idée tourne en rond, « tout existe déjà » | retourne l'idée en trois tours, narquois ; tutoie |
 | le Grillon parlant | `grillon.md` | l'idée touche d'autres gens, des données, l'IA ou la loi | parle bas, nomme une personne absente, dit non une fois ; vouvoie |
 | Palamède | `palamede.md` | on écrit ou simplifie des règles, le système s'alourdit | joue le tricheur, puis en tire la règle la plus courte ; vouvoie |
+| Thalie | `thalie.md` | les scènes sonnent écrites ou monotones ; régler la plume | réécrit au lieu d'expliquer, coupe, varie ses longueurs ; tutoie |
 | Zeus | `zeus.md` | la troupe se contredit ou s'enlise, tour à l'aveugle, recrue ; organiser à plusieurs | verdict qui claque, preuves, puis une blague sur sa légende ; tutoie |
 
 Les liens d'origine (rivalités, complicités) sont dans `.poucet/troupe.md`. Fais-les jouer quand ils servent l'idée.
