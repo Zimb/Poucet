@@ -885,6 +885,29 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 38,
+      "sujet": "equipe",
+      "decision": "Recrutement d'Ariane, relectrice du fil : elle relit à froid la trace et le dépôt, déroule le chemin et repère les nœuds, sans trancher. Fiche par Marraine, épreuve ratée sur la forme (sourçage, deux préférées) puis réussie après correction. Embauche recommandée, en attente du fondateur.",
+      "raison": "Demande du fondateur ; un contexte neuf voit les nœuds que Poucet, pris dans la conversation, ne voit plus.",
+      "ecartees": [
+        {
+          "option": "Confier ce travail à Poucet seul",
+          "raison": "Poucet est ancré dans la conversation ; Ariane arrive sans mémoire de l'échange."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Retirer la grille de réponses du dépôt pendant une épreuve",
+          "raison": "L'agent testé lit le dépôt ; sinon il peut tomber sur les nœuds de référence."
+        },
+        {
+          "piste": "Trois regards indépendants (Boucle d'or, le récapitulatif de Poucet, Ariane) pointent le même nœud : business ou réalisation",
+          "raison": "Signal fort que c'est la prochaine décision à prendre."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],

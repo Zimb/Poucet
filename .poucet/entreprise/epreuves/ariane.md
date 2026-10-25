@@ -60,3 +60,10 @@ Marraine note chaque critère réussi / raté avec la phrase de la réponse qui 
 - Nouvelle étape 8 : une seule préférée par nœud, avec une raison qui dit ce que le choix débloque ou ce qu'il coûte de moins. Un numéro d'étape ne compte pas comme raison.
 
 **Verdict de Marraine** : le travail de fond est bon. Il n'y a aucun brin faux et 5 des 6 nœuds de référence sont trouvés. La question finale est la bonne : pour toi seul, ou pour n'importe qui. Repasse recommandée sur les critères 2 et 4 seulement, avec la même tâche et en gardant `sonnet` : les deux ratés sont de forme, pas de modèle. Embauche à recommander si la repasse réussit.
+
+### Repasse (critères 2 et 4), évaluée par Poucet
+
+- **Critère 2 (sourçage)** : réussi. Les 14 citations des brins se retrouvent mot pour mot dans la trace, et le commit `e698b0c` existe ; les déductions sont marquées « (lecture d'Ariane) ». Seule imprécision, hors brins, dans la question finale : « le chemin de réalisation de l'étape 17 » (l'expression vient des étapes 15 et 24, pas de la 17).
+- **Critère 4 (dénouer sans trancher)** : réussi. Une seule préférée par nœud, chacune avec ce qu'elle débloque ; aucun « il faut » ; une seule question, sur le nœud 1.
+- **Bonus** : elle trouve cette fois la contradiction 24 / 25 (le skill unique écarté puis adopté), et N6 en entier (Boucle d'or en attente dans le registre).
+- **Verdict** : épreuve réussie. Embauche recommandée, en attente du fondateur.
