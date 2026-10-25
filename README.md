@@ -39,7 +39,7 @@ Chacun a une mission liée à son angle, et ton idée est viable quand elle en s
 ```
 CLAUDE.md              Poucet et les règles de l'équipe
 .claude/output-styles/ Le style « Poucet » : on entre en scène, sans présentation
-.claude/hooks/         ouverture.sh tire au sort qui ouvre ; en-scene.sh rappelle les règles ; memoire.sh sauve la mémoire de la troupe
+.claude/hooks/         ouverture.sh tire au sort qui ouvre ; en-scene.sh rappelle les règles ; memoire.sh sauve la mémoire de la troupe ; fiches.sh vérifie que les fiches sont lues et qu'une scène a trois voix au plus
 .claude/settings.json  Active le style et le hook à chaque démarrage
 IDEE.md                Ton idée
 .claude/agents/        Un fichier par persona
