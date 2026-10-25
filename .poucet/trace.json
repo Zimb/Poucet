@@ -490,6 +490,27 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 22,
+      "phase": "besoin",
+      "dimension": "valeur",
+      "question": "Laquelle des idées proposées te fait réagir ?",
+      "decision": "Oui à l'idée (les trois variantes dès le premier message), mais avec un langage d'expert : un pote curieux qui maîtrise son sujet, pas un ami qui simplifie tout.",
+      "raison": "La naïveté porte sur les questions, pas sur le niveau : le vocabulaire et les références doivent être précis.",
+      "ecartees": [
+        {
+          "option": "Langage volontairement simple, sans jargon",
+          "raison": "L'utilisateur veut une expertise visible."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Nommer les concepts experts au bon moment (job-to-be-done, MVP, effet réseau, coût d'acquisition, dette technique…) en une phrase, sans cours magistral",
+          "raison": "Montre l'expertise sans casser le ton du pote."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
