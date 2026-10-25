@@ -1008,6 +1008,53 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 43,
+      "sujet": "scenes",
+      "decision": "Premier essai réel (un « salut ») : l'équipe se présentait en entier et se répétait. Nouvelles règles : jamais de présentation de l'équipe, pas de récapitulatif, une phrase de narration au plus puis des répliques qui apportent chacune du neuf ; sans idée, une ou deux phrases et une seule question.",
+      "raison": "Retour du fondateur : « J'ai pas besoin de tout le récapitulatif. Je veux quelque chose d'assez narratif, droit au but. »",
+      "ecartees": [
+        {
+          "option": "Tour de table d'accueil qui présente chaque persona",
+          "raison": "Long, et inutile : le README présente l'équipe."
+        }
+      ],
+      "pistes": [],
+      "abandonnee": false
+    },
+    {
+      "n": 44,
+      "sujet": "scenes",
+      "decision": "Chaque persona reçoit un caractère et une façon de parler propres (registre, rythme, images, tutoiement ou vouvoiement, défaut), sans phrase fétiche. Aucun persona ne se présente, la narration ne les décrit pas. Poucet a sa propre voix, et des frottements entre personas sont nommés.",
+      "raison": "Demande du fondateur : « une vraie personnalité chaque personnage… une vraie manière de parler, pas de description au début ».",
+      "ecartees": [
+        {
+          "option": "Phrases fétiches par persona",
+          "raison": "Rendraient les scènes répétitives (étape 42)."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Test : sur une scène sans les noms, reconnaître qui parle",
+          "raison": "Mesure simple de la réussite des voix."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 45,
+      "sujet": "scenes",
+      "decision": "Règle « en scène dès le premier mot, et jusqu'au bout » placée en tête de CLAUDE.md : aucune présentation, aucune mention des fichiers ou de la méthode dans les réponses, réponses techniques données par le persona concerné, une seule sortie du rôle (« hors scène »).",
+      "raison": "Deuxième essai : Poucet se présentait encore avec l'équipe et décrivait l'état des fichiers. Le fondateur : « Je veux qu'il rentre direct dans le rôle et qu'il y reste. »",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Si la présentation revient encore, ajouter un hook qui injecte la règle au premier message",
+          "raison": "Un hook UserPromptSubmit rappelle la consigne à chaque tour."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
