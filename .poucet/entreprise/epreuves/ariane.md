@@ -43,6 +43,20 @@ Bonus (non exigé) : N7, pistes orphelines de l'originalité, 14 (cinq angles) e
 
 Marraine note chaque critère réussi / raté avec la phrase de la réponse qui le prouve. Un critère raté : la fiche est corrigée sur ce point et l'épreuve repassée. Si le critère 2 échoue deux fois avec `model: sonnet`, tester `model: inherit` avant de conclure que le besoin est mal posé. Deux échecs de suite : signalé au fondateur.
 
-## Résultat
+## Résultat (2026-10-25)
 
-À remplir après le passage.
+1er passage (contexte neuf, `model: sonnet`, fichier d'épreuve retiré du dépôt pendant le test ; `git status --short` identique avant et après).
+
+| Critère | Verdict | Preuve |
+|---|---|---|
+| 1. Fil déroulé, et juste | Réussi | 5 tronçons de 1 à 37 ; constantes « Le fondateur tranche, Poucet propose (étapes 21, 29, 32) » ; virages 24 (« Aucune raison côté utilisateur ») et 35 (« générable par n'importe qui seul », « la demande du fondateur »). |
+| 2. Sourçage strict | **Raté (forme)** | Aucun brin faux : les mots cités se retrouvent tous dans la trace (17, 24, 34, 35, 25, 9, 12, 37, 23, 6, 36, 7, 34 par défaut, `fin_phase_1`) et les constats de dépôt sont exacts (pas de `SKILL.md` ni de `modes/`). Mais plusieurs brins des trois premiers nœuds n'ont pas de guillemets et ne sont pas marqués comme lecture : « Étape 24 : virage business », « Les étapes 26, 27, 28, 30, 32, 33 et 35 ajoutent des rôles… », et au nœud 5 « Étape 9 : v2 jamais marquée ». |
+| 3. Nœuds principaux, sans faux nœud | Réussi | N2 au rang 1 ; N1 réparti entre les nœuds 1 et 2 (17, 34 « ne porte pas une entreprise qui vit dans un dépôt », 25, 35) ; N3 au nœud 3 ; N4 au nœud 4 ; N5 aux nœuds 2 et 5 ; N6 en partie (le défaut de l'étape 34, sans l'embauche de Boucle d'or). Les faux nœuds sont rangés dans « Déjà dénoués ». Réserve : « Ariane n'a ni étape ni ligne dans `registre.md` » est normal pour une candidate en épreuve. Manqué dans N5 : l'étape 24 écartait le skill unique que 25 adopte. |
+| 4. Dénouer sans trancher | **Raté** | 2 ou 3 gestes par nœud, aucun « il faut », une seule question qui porte sur le nœud 1. Mais au nœud 1 la préférée est « (a) ou (c) », donc pas une seule ; au nœud 3 la préférée n'a pas de raison (« Adopter « un seul contexte par défaut » comme décision (étape 37) »). |
+| 5. Sobre et en lecture seule | Réussi | Environ 250 mots hors tableau ; `git status` inchangé. L'usage de Bash et l'absence de recherche web ne sont pas rapportés : ces deux points ne sont pas vérifiés. |
+
+**Corrections de la fiche** (deux points précis, rien d'autre) :
+- Étape 6, sourçage : pas de brin sans guillemets. Une paraphrase ou un résumé de plusieurs étapes se marque « (lecture d'Ariane) », et chaque brin se relit avant de rendre.
+- Nouvelle étape 8 : une seule préférée par nœud, avec une raison qui dit ce que le choix débloque ou ce qu'il coûte de moins. Un numéro d'étape ne compte pas comme raison.
+
+**Verdict de Marraine** : le travail de fond est bon. Il n'y a aucun brin faux et 5 des 6 nœuds de référence sont trouvés. La question finale est la bonne : pour toi seul, ou pour n'importe qui. Repasse recommandée sur les critères 2 et 4 seulement, avec la même tâche et en gardant `sonnet` : les deux ratés sont de forme, pas de modèle. Embauche à recommander si la repasse réussit.
