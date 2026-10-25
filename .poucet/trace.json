@@ -180,8 +180,9 @@
         "https://github.com/augmnt/agents",
         "https://code.claude.com/docs/en/subagents"
       ],
-      "abandonnee": false,
-      "note": "Différence principale reportée en v2 à l'étape 9 ; remplacée par l'étape 10."
+      "abandonnee": true,
+      "note": "Différence principale reportée en v2 à l'étape 9 ; remplacée par l'étape 10.",
+      "raison_abandon": "Différence principale reportée en v2 (étape 9) et remplacée par l'étape 10."
     },
     {
       "n": 8,
@@ -226,7 +227,11 @@
           "raison": "Décisions des étapes 4 et 7, reportées."
         }
       ],
-      "abandonnee": false
+      "abandonnee": false,
+      "remplacee_par": {
+        "etape": 26,
+        "sur": "l'équipe d'agents n'attend plus la v2 : elle devient un mode du skill (note de l'étape 26)"
+      }
     },
     {
       "n": 10,
@@ -563,7 +568,11 @@
         }
       ],
       "virage": "Le but s'élargit : on passe de 'chemin de réalisation' à 'lancer un business' (client, offre, prix, premiers clients).",
-      "abandonnee": false
+      "abandonnee": false,
+      "remplacee_par": {
+        "etape": 25,
+        "sur": "la forme (mini-skills remplacés par un seul skill avec aiguillage) ; le virage business reste en question (étape 34)"
+      }
     },
     {
       "n": 25,
@@ -907,6 +916,16 @@
           "raison": "Signal fort que c'est la prochaine décision à prendre."
         }
       ],
+      "abandonnee": false
+    },
+    {
+      "n": 39,
+      "sujet": "equipe",
+      "decision": "Le fondateur embauche Boucle d'or (hors équipe active) et Ariane (équipe active), et demande de faire tourner Ariane.",
+      "raison": "Épreuves réussies (étapes 34 et 38).",
+      "ecartees": [],
+      "pistes": [],
+      "note": "Rangement fait à la suite des nœuds d'Ariane : étape 7 marquée abandonnée, étapes 9 et 24 annotées remplacee_par.",
       "abandonnee": false
     }
   ],
