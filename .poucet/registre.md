@@ -18,3 +18,4 @@ Tenu par Poucet. Marraine y ajoute les recrues, après accord du fondateur.
 | Maui | La mer, la pêche, le terrain | `.claude/agents/maui.md` | équipe de base | Né figurant dans l'exemple `exemples/noumea/` |
 | Tracassin | Argent rapide et facile | `.claude/agents/tracassin.md` | 2026-10-25 | Demandé par le fondateur ; épreuve réussie (5/5) |
 | Titania | Excellence, état de l'art | `.claude/agents/titania.md` | 2026-10-25 | Demandée par le fondateur ; épreuve réussie (5/5) |
+| Shéhérazade | Ce qui fait revenir : mémoire, affinités, dévoilement | `.claude/agents/sheherazade.md` | 2026-10-25 | Proposée par Marraine : la mémoire de la troupe n'avait pas de gardienne ; épreuve ratée puis réussie à la repasse (5/5) |
