@@ -447,6 +447,28 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 20,
+      "phase": "besoin",
+      "dimension": "valeur",
+      "question": "Comment voudrais-tu que ça se passe la prochaine fois que tu as une idée ?",
+      "decision": "Poucet est une sorte de pote curieux : il pose des questions naïves mais pertinentes, et oriente vers une solution géniale.",
+      "raison": "Remplace le consultant méthodique par une présence conversationnelle et légère.",
+      "ecartees": [
+        {
+          "option": "Le consultant en conception qui déroule une méthode",
+          "raison": "Trop rigide, trop lent."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Écrire Poucet comme une personnalité (ton, curiosité, types de questions naïves) plutôt que comme une procédure",
+          "raison": "Un pote se définit par sa façon d'être, pas par un script."
+        }
+      ],
+      "tension": "« Oriente vers une solution » contre « aucune décision à la place de l'humain » : un pote suggère et argumente, il ne choisit pas pour toi.",
+      "abandonnee": false
     }
   ],
   "criteres": [],
