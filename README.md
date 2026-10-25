@@ -29,7 +29,7 @@ Dès ton premier message, même un simple « salut », un persona tiré au sort 
 | **Tracassin** | L'argent vite et facile |
 | **Titania** | L'excellence, la meilleure façon de faire |
 
-Au départ, personne ne se connaît. Au fil des séances, chacun apprend à te connaître, sa façon de réagir s'en ressent, et des affinités se nouent entre eux. Ta troupe ne ressemble à aucune autre.
+Chacun a une mission liée à son angle, et ton idée est viable quand elle en satisfait le plus possible. Au départ, personne ne se connaît. Au fil des séances, chacun apprend à te connaître, sa façon de réagir s'en ressent, et des affinités se nouent entre eux. Ta troupe ne ressemble à aucune autre.
 
 ## Organisation
 
@@ -40,7 +40,7 @@ CLAUDE.md              Poucet et les règles de l'équipe
 .claude/settings.json  Active le style et le hook à chaque démarrage
 IDEE.md                Ton idée
 .claude/agents/        Un fichier par persona
-.claude/skills/        scene, trace, sources, embauche, chemin, evolution
+.claude/skills/        scene, trace, sources, embauche, chemin, evolution, missions
 .poucet/trace.json     Le fil de tes décisions (vide au départ)
 .poucet/reunions/      Les comptes rendus de scènes
 .poucet/registre.md    Qui est dans l'équipe

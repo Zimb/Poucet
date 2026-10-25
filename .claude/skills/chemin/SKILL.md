@@ -5,7 +5,7 @@ description: Mène la validation d'une idée (dernière vérification d'Ariane, 
 
 # Valider
 
-1. **Ariane** relit le fil à froid (vrai sous-agent). S'il reste un nœud serré, scène d'abord.
+1. **Ariane** relit le fil à froid (vrai sous-agent) et dresse le tableau des missions (skill `missions`). S'il reste un nœud serré, ou une mission à 0, scène d'abord.
 2. **L'Ogre** fait passer la dernière épreuve. Ce qui ne tient pas repart en scène.
 3. **Le fondateur seul dit « validée »** (ou « abandonnée », ce qui est aussi un bon résultat). Note-le dans la trace.
 
@@ -22,6 +22,7 @@ Court et concret, à la racine du dépôt :
 7. **Les ressources** (temps, argent) selon la Fourmi.
 8. **Les risques et leur parade**, en tableau (Cassandre).
 9. **Les sentiers non pris** et les pistes pour plus tard (tirés de la trace).
-10. **L'avis franc de l'équipe** : prêt, à clarifier ou à reconsidérer, en trois phrases.
+10. **Les missions** : le tableau final, persona par persona, satisfaction de 0 à 3 et pourquoi.
+11. **L'avis franc de l'équipe** : prêt, à clarifier ou à reconsidérer, en trois phrases.
 
 Vérifie les liens avec le skill `sources`, puis montre-le au fondateur et ajuste-le avec lui.

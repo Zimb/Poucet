@@ -1275,6 +1275,20 @@
       ],
       "pistes": [],
       "abandonnee": false
+    },
+    {
+      "n": 59,
+      "sujet": "equipe",
+      "decision": "Chaque persona a un rôle et une mission liée à son angle, adaptée à l'idée en début de séance, avec une satisfaction de 0 à 3. L'idée est viable quand elle satisfait le plus de personas possible : avant l'Ogre, aucune mission active à 0 et deux tiers à 2 ou plus. Si l'angle ne s'applique pas, une variante de repli (Tracassin : l'intérêt personnel du fondateur sur un projet non lucratif).",
+      "raison": "Le fondateur : « que chacun ait un rôle et une mission durant la session […] il faut réussir à satisfaire le maximum de personas pour que le projet soit viable […] si le projet n'est pas lucratif, le nain peut quand même trouver un intérêt personnel. »",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Pondérer les missions selon le mode",
+          "raison": "En mode pour moi, la mission de la Fourmi compte sans doute plus que celle du Chat Botté."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
