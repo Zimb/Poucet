@@ -712,6 +712,26 @@
       ],
       "question_ouverte": "Le scribe reste-t-il aussi le pote curieux qui propose (étapes 20 à 23), ou ce rôle passe-t-il à un autre employé ?",
       "abandonnee": false
+    },
+    {
+      "n": 31,
+      "sujet": "equipe",
+      "decision": "Poucet est l'associé : il garde les deux rôles, scribe (trace, comptes rendus, registre) et pote curieux (questions naïves, propositions, avocat du diable).",
+      "raison": "Choix de l'utilisateur, « pour le moment ».",
+      "ecartees": [
+        {
+          "option": "Un deuxième employé dédié au cadrage, Poucet limité au rôle de scribe",
+          "raison": "Pas nécessaire pour l'instant."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Séparer les deux rôles plus tard si l'un étouffe l'autre",
+          "raison": "Choix annoncé comme provisoire."
+        }
+      ],
+      "precise": 30,
+      "abandonnee": false
     }
   ],
   "criteres": [],
