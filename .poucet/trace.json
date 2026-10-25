@@ -855,6 +855,36 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 37,
+      "sujet": "contraintes",
+      "decision": "Budget limité : l'entreprise doit rester sobre en tokens et tenir dans un abonnement Claude standard, plus du calcul local gratuit.",
+      "raison": "Le fondateur le précise ; le multi-agent coûte environ 15 fois plus de tokens qu'un chat (étape 36).",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "La troupe se joue dans un seul contexte par défaut ; de vrais sous-agents seulement pour les réunions qui comptent",
+          "raison": "La séparation des contextes ne paie que pour le tour à l'aveugle."
+        },
+        {
+          "piste": "model: haiku dans les fiches des agents d'appoint (Boucle d'or, le Loup)",
+          "raison": "Champ model des sous-agents Claude Code ; garde le modèle fort pour Poucet et Brique."
+        },
+        {
+          "piste": "Réunion plafonnée : 3 participants, un tour à l'aveugle et une réplique chacun",
+          "raison": "Borne le coût de chaque réunion."
+        },
+        {
+          "piste": "Volume la nuit sur Ollama en local, jugement le matin avec Claude",
+          "raison": "Le calcul local ne coûte que l'électricité."
+        },
+        {
+          "piste": "Recherche web gratuite en local (SearXNG) pour les agents de nuit",
+          "raison": "Évite une API payante."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
