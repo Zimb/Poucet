@@ -588,6 +588,33 @@
       ],
       "precise": 24,
       "abandonnee": false
+    },
+    {
+      "n": 26,
+      "sujet": "equipe",
+      "decision": "Poucet recrute une équipe d'agents vivante : elle grandit (recrutements proposés quand le projet en a besoin) et s'adapte (fiches de poste et skills mis à jour quand le projet change).",
+      "raison": "Choix de l'utilisateur : une équipe figée se périme dès que le projet bouge ; cohérent avec l'étape 18 (suivre le développement).",
+      "ecartees": [
+        {
+          "option": "Recruter une seule fois à la fin du cadrage",
+          "raison": "Équipe figée alors que le projet évolue."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "L'entretien annuel : chaque recadrage humain est noté et sert à réécrire la fiche ou le skill de l'agent concerné",
+          "raison": "Répond au problème de départ (étape 6) et donne un critère mesurable ; pas encore confirmé par l'utilisateur."
+        },
+        {
+          "piste": "Les fiches de poste renvoient aux étapes de trace.json au lieu de recopier les décisions",
+          "raison": "Une décision changée met à jour toute l'équipe d'un coup."
+        }
+      ],
+      "remet_en_question": [
+        9
+      ],
+      "note": "La tension avec l'étape 9 (équipe en v2) est levée : l'équipe devient un mode 'equipe' du skill poucet (étape 25).",
+      "abandonnee": false
     }
   ],
   "criteres": [],
