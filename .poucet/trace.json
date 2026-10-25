@@ -697,6 +697,21 @@
       "note": "Le « consulting » vaut pour le format des réunions, pas pour le ton de Poucet, qui reste celui d'un pote (étape 23).",
       "precise": 28,
       "abandonnee": false
+    },
+    {
+      "n": 30,
+      "sujet": "equipe",
+      "decision": "Poucet est le premier employé de l'entreprise : le scribe. Il est toujours dans l'équipe, tient la trace, rédige les comptes rendus de réunion et tient le registre de l'entreprise.",
+      "raison": "Choix de l'utilisateur ; colle au nom (le Petit Poucet sème des cailloux pour retrouver le chemin).",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Le scribe ne peut pas être un sous-agent classique : un sous-agent ne voit que ce qu'on lui transmet. Il vit dans la session principale (skill) ou dans un hook de fin de session qui lui passe la conversation.",
+          "raison": "Contrainte technique de Claude Code."
+        }
+      ],
+      "question_ouverte": "Le scribe reste-t-il aussi le pote curieux qui propose (étapes 20 à 23), ou ce rôle passe-t-il à un autre employé ?",
+      "abandonnee": false
     }
   ],
   "criteres": [],
