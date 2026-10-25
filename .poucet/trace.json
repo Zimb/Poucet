@@ -793,6 +793,34 @@
       ],
       "question_ouverte": "Boucle d'or signale que le virage « lancer un business » (étape 24) ne s'appuie sur aucun besoin exprimé par la cible (l'auteur, étapes 1 et 17), et que le zip pour le chat ne porte pas une entreprise qui vit dans un dépôt. À trancher par le fondateur : changer la cible, ou revoir le virage.",
       "abandonnee": false
+    },
+    {
+      "n": 35,
+      "sujet": "angle",
+      "decision": "Poucet devient une sim de création d'entreprise, un jeu de rôle théâtral : à partir d'un seul utilisateur (le fondateur), il génère toute l'entreprise (associé, RH, employés, clients, concurrents, réunions, crises). Premier brouillon de system prompt : prompts/poucet-sim.md (v0.1), à adapter au fil des essais. Ce dépôt sert d'exemple, avec le fondateur comme premier cas.",
+      "raison": "Demande du fondateur : une sim théâtrale de la vie en entreprise, générable par n'importe qui seul.",
+      "ecartees": [
+        {
+          "option": "Remplacer tout de suite CLAUDE.md par la sim",
+          "raison": "Brouillon à tester d'abord ; CLAUDE.md reste en place jusqu'à validation (puis archivé comme le v0)."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Garde-fous intégrés : faits vérifiés et sourcés, personnages simulés jamais présentés comme réels, chaque scène finit par un pas dans la vraie vie, « en bref » pour sortir du théâtre",
+          "raison": "Le jeu ne doit pas ralentir (étape 12) ni tromper (épreuve de Boucle d'or)."
+        },
+        {
+          "piste": "Le Loup incarne la recherche de l'existant dès le premier message",
+          "raison": "Met en scène l'étape « vérifier l'existant » du CLAUDE.md."
+        },
+        {
+          "piste": "Existant proche : ChatDev (OpenBMB), entreprise logicielle simulée par des agents qui codent seuls",
+          "raison": "Poucet s'en distingue : le fondateur décide, la sim vise la création d'entreprise et finit par des pas réels."
+        }
+      ],
+      "note": "La question de l'étape 34 (business ou réalisation) penche vers le business, sous forme de sim ; Boucle d'or reste à embaucher.",
+      "abandonnee": false
     }
   ],
   "criteres": [],
