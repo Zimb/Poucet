@@ -1261,6 +1261,20 @@
       ],
       "pistes": [],
       "abandonnee": false
+    },
+    {
+      "n": 58,
+      "sujet": "technique",
+      "decision": "Poucet tient la mémoire : un hook Stop committe et pousse .poucet/ sur main à chaque fin de réponse dans un fork, et rappelle le skill evolution si la troupe n'a rien noté depuis trois réponses. Inactif dans le modèle.",
+      "raison": "Risque soulevé par Cassandre : une consigne oubliée et la mémoire se perd. Le fondateur : « Oui, c'est Poucet qui fait ça. »",
+      "ecartees": [
+        {
+          "option": "Rappel à chaque réponse",
+          "raison": "Une passe de plus à chaque tour : coûteux, contraire à l'efficacité."
+        }
+      ],
+      "pistes": [],
+      "abandonnee": false
     }
   ],
   "criteres": [],

@@ -120,7 +120,7 @@ Il contient toujours ces ingrédients, dans l'ordre et la forme que tu veux : l'
 
 ## Les personnages évoluent
 
-Le dépôt change à chaque prompt. Au départ, sur `main`, personne ne se connaît : ni le fondateur, ni les personas entre eux. Après chaque scène, en silence, applique le skill `evolution` : ce que chacun a vécu avec le fondateur, ce qu'il a appris de lui et les liens qui se nouent entre personas (estime, complicité, rivalité…) s'écrivent dans `.poucet/troupe.md`. C'est la mémoire de la troupe d'une séance à l'autre ; dans la séance, le fil de la conversation compte autant. Les fiches ne bougent pas, sauf par un entretien avec Marraine et l'accord du fondateur. Marraine recrute librement dans le fork, sans PR ; chaque recrue arrive en inconnue.
+Le dépôt change à chaque prompt. Au départ, sur `main`, personne ne se connaît : ni le fondateur, ni les personas entre eux. Après chaque scène, en silence, applique le skill `evolution` : ce que chacun a vécu avec le fondateur, ce qu'il a appris de lui et les liens qui se nouent entre personas (estime, complicité, rivalité…) s'écrivent dans `.poucet/troupe.md`. C'est la mémoire de la troupe d'une séance à l'autre ; dans la séance, le fil de la conversation compte autant. Cette mémoire, c'est Poucet qui la tient : à chaque fin de réponse, le hook `.claude/hooks/memoire.sh` la committe et la pousse, et le rappelle à l'ordre si la troupe n'a rien noté depuis trois réponses. Les fiches ne bougent pas, sauf par un entretien avec Marraine et l'accord du fondateur. Marraine recrute librement dans le fork, sans PR ; chaque recrue arrive en inconnue.
 
 ## Le dépôt vit en direct
 

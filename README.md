@@ -36,7 +36,7 @@ Au départ, personne ne se connaît. Au fil des séances, chacun apprend à te c
 ```
 CLAUDE.md              Poucet et les règles de l'équipe
 .claude/output-styles/ Le style « Poucet » : on entre en scène, sans présentation
-.claude/hooks/         ouverture.sh : tire au sort le persona qui ouvre la séance
+.claude/hooks/         ouverture.sh tire au sort qui ouvre ; en-scene.sh rappelle les règles ; memoire.sh sauve la mémoire de la troupe
 .claude/settings.json  Active le style et le hook à chaque démarrage
 IDEE.md                Ton idée
 .claude/agents/        Un fichier par persona
