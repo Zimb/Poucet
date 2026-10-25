@@ -1,0 +1,1037 @@
+{
+  "projet": "poucet-outil",
+  "description_initiale": "Partir de la méthode Poucet (un CLAUDE.md qui guide le cadrage d'un projet en trois phases avant tout code, avec une trace des décisions) et en faire un outil. Pistes évoquées : schéma + générateur de CHEMIN.md, plugin Claude Code avec hook, serveur MCP, visualiseur du chemin, pont vers GitHub.",
+  "etapes": [
+    {
+      "n": 1,
+      "phase": "besoin",
+      "dimension": "utilisateurs",
+      "question": "Pour la première version, qui est la personne visée en premier ?",
+      "decision": "Moi d'abord : l'auteur, qui cadre ses propres projets avec Claude.",
+      "raison": "Rendre Poucet fiable pour son propre usage avant de l'ouvrir aux autres.",
+      "ecartees": [
+        {
+          "option": "Développeurs avec agent IA (public large)",
+          "raison": "Pas la cible de la v1 ; peut venir ensuite."
+        },
+        {
+          "option": "Porteurs de projet non techniques",
+          "raison": "Demanderait une interface sans terminal ; hors v1."
+        },
+        {
+          "option": "Freelances et équipes",
+          "raison": "Besoins de partage et de justification client ; hors v1."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Ouvrir l'outil aux autres développeurs utilisant un agent IA",
+          "raison": "Suite naturelle une fois l'usage personnel stabilisé."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 2,
+      "phase": "besoin",
+      "dimension": "probleme",
+      "question": "Qu'est-ce qui coince concrètement avec le CLAUDE.md actuel ?",
+      "decision": "Ce n'est pas une gêne précise mais une envie : utiliser Poucet depuis le chat de Claude, et qu'il produise toute l'ébauche du projet, y compris des agents spécialisés, des skills et un orchestrateur.",
+      "raison": "L'utilisateur veut passer du cadrage seul à un cadrage qui débouche sur une équipe d'agents prête à construire le projet.",
+      "ecartees": [
+        {
+          "option": "Outil limité au terminal (CLI seule)",
+          "raison": "Doit être utilisable depuis le chat de Claude."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Générer, à partir de CHEMIN.md, des agents par métier (CODE, ART, AUDIO, TEXTE, DESIGN) et un orchestrateur",
+          "raison": "Prolonge les TODO balisés par métier déjà prévus dans l'ébauche."
+        },
+        {
+          "piste": "Distribuer Poucet sous forme de skill utilisable dans le chat",
+          "raison": "Répond à l'envie d'usage depuis le chat sans copier de fichier."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 3,
+      "phase": "besoin",
+      "dimension": "fonctionnalites",
+      "question": "À quoi servent les agents spécialisés et l'orchestrateur ?",
+      "decision": "À construire le projet : après validation de CHEMIN.md, Poucet génère dans le dépôt des agents par métier, leurs skills et un orchestrateur qui leur répartit les tâches.",
+      "raison": "Le cadrage doit déboucher directement sur une équipe prête à travailler, pas seulement sur un document.",
+      "ecartees": [
+        {
+          "option": "Agents qui mènent le cadrage lui-même",
+          "raison": "Le cadrage reste une conversation guidée ; les agents servent à la construction."
+        },
+        {
+          "option": "Agents pour le cadrage et pour la construction",
+          "raison": "Double le périmètre de la v1."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Plus tard, un agent dédié à la recherche de l'existant ou à la vérification des noms pendant le cadrage",
+          "raison": "Ce sont des tâches de recherche bien isolées."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 4,
+      "phase": "besoin",
+      "dimension": "contraintes",
+      "question": "Où se passent le cadrage et la génération de l'équipe d'agents ?",
+      "decision": "Claude doit pouvoir pousser lui-même le dépôt (sur GitHub) : l'ébauche et l'équipe d'agents arrivent dans le dépôt sans manipulation manuelle.",
+      "raison": "Éviter l'étape « télécharger les fichiers puis les poser à la main ».",
+      "ecartees": [
+        {
+          "option": "Livraison en fichiers ou archive à poser à la main",
+          "raison": "L'utilisateur veut que Claude pousse le dépôt."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Claude Code sur le web ou dans l'appli Claude (comme cette session) : conversation depuis l'appli, avec push sur GitHub",
+          "raison": "Réunit l'usage depuis le chat et le push, sans terminal."
+        },
+        {
+          "piste": "Créer le dépôt GitHub automatiquement s'il n'existe pas",
+          "raison": "Va jusqu'au bout de « Claude pousse le repo »."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 5,
+      "phase": "besoin",
+      "dimension": "probleme",
+      "question": "Qu'est-ce qui bloque pour passer du cadrage à la construction ?",
+      "decision": "Les agents ne sont pas optimisés pour le projet.",
+      "raison": "Réponse de l'utilisateur ; le sens exact de « optimisé » reste à préciser.",
+      "ecartees": [],
+      "pistes": [],
+      "abandonnee": false
+    },
+    {
+      "n": 6,
+      "phase": "besoin",
+      "dimension": "probleme",
+      "question": "Dans quel sens les agents ne sont-ils pas optimisés ?",
+      "decision": "Sans agents, il faut sans cesse reprendre et recadrer le LLM. Poucet doit faire comme un RH : recruter une équipe d'agents sur mesure pour le projet, leur écrire leurs skills et une orchestration adaptée.",
+      "raison": "Le coût actuel, c'est la supervision permanente du LLM ; une équipe taillée sur le cadrage doit la réduire.",
+      "ecartees": [
+        {
+          "option": "Équipe d'agents générique et fixe, la même pour tous les projets",
+          "raison": "L'équipe doit être recrutée sur mesure, à partir du projet."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Fiches de poste : chaque agent a un rôle, un périmètre, des décisions de CHEMIN.md à respecter et des critères de « fini »",
+          "raison": "Prolonge la métaphore RH et limite la dérive."
+        },
+        {
+          "piste": "Mesurer le nombre de recadrages nécessaires avant et après Poucet",
+          "raison": "Candidat naturel pour le critère de succès."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 7,
+      "phase": "besoin",
+      "dimension": "valeur",
+      "question": "En quoi Poucet est-il différent de BMAD, Spec Kit, Agent OS ou augmnt/agents ?",
+      "decision": "La différence principale : tout se fait depuis l'appli Claude, du cadrage jusqu'au dépôt GitHub poussé avec l'équipe d'agents dedans, sans terminal ni npx.",
+      "raison": "L'utilisateur veut un parcours de bout en bout depuis le chat.",
+      "ecartees": [
+        {
+          "option": "Miser d'abord sur le recrutement dérivé du cadrage",
+          "raison": "Non retenu comme différence principale (reste une conséquence naturelle de la méthode)."
+        },
+        {
+          "option": "Miser d'abord sur la trace suivie par les agents",
+          "raison": "Non retenu comme différence principale pour la v1."
+        },
+        {
+          "option": "Miser d'abord sur les projets non logiciels",
+          "raison": "Non retenu comme différence principale pour la v1."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Les agents consultent et enrichissent trace.json pendant la construction",
+          "raison": "Différence forte par rapport à l'existant, à garder pour plus tard."
+        },
+        {
+          "piste": "Recrutement d'agents ART, AUDIO, TEXTE pour les projets non logiciels",
+          "raison": "Peu couvert par l'existant."
+        }
+      ],
+      "sources": [
+        "https://pasqualepillitteri.it/fr/news/196/bmad-framework-claude-code-developpement-agile",
+        "https://github.blog/2025-09-02-spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/",
+        "https://buildermethods.com/agent-os/v2/orchestrate-tasks",
+        "https://github.com/augmnt/agents",
+        "https://code.claude.com/docs/en/subagents"
+      ],
+      "abandonnee": true,
+      "note": "Différence principale reportée en v2 à l'étape 9 ; remplacée par l'étape 10.",
+      "raison_abandon": "Différence principale reportée en v2 (étape 9) et remplacée par l'étape 10."
+    },
+    {
+      "n": 8,
+      "phase": "besoin",
+      "dimension": "fonctionnalites",
+      "question": "Quelles fonctions sont indispensables pour la v1 ?",
+      "decision": "Le but premier : prendre le problème dans le bon ordre, et aider vraiment à trouver un chemin pour développer une idée originale qui résout un problème concret et nouveau.",
+      "raison": "L'utilisateur recentre l'outil sur la qualité du cadrage et sur l'originalité de l'idée, plus que sur la liste des fonctions.",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Aider à vérifier qu'une idée est vraiment nouvelle (recherche de l'existant plus poussée, angle non couvert)",
+          "raison": "Découle de l'objectif « idée originale, problème nouveau »."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 9,
+      "phase": "besoin",
+      "dimension": "fonctionnalites",
+      "question": "Quel est le cœur de la v1 : le cadrage ou l'équipe d'agents ?",
+      "decision": "Le cadrage d'abord. La v1 aide à trouver une idée originale et un chemin sûr ; le recrutement de l'équipe et le push du dépôt viennent en v2.",
+      "raison": "Tranche la tension entre les étapes 3, 6 et 7 (équipe d'agents, push) et l'étape 8 (qualité du cadrage).",
+      "ecartees": [
+        {
+          "option": "Cadrage puis équipe minimale poussée dès la v1",
+          "raison": "Partage l'effort ; l'utilisateur veut concentrer la v1 sur le cadrage."
+        },
+        {
+          "option": "Équipe d'agents d'abord",
+          "raison": "Le cadrage actuel ne suffit pas : c'est lui qui doit progresser en premier."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "v2 : recrutement d'une équipe d'agents sur mesure (fiches de poste, skills, orchestrateur) à partir de CHEMIN.md",
+          "raison": "Décisions des étapes 3 et 6, reportées."
+        },
+        {
+          "piste": "v2 : création et push du dépôt GitHub depuis l'appli Claude",
+          "raison": "Décisions des étapes 4 et 7, reportées."
+        }
+      ],
+      "abandonnee": false,
+      "remplacee_par": {
+        "etape": 26,
+        "sur": "l'équipe d'agents n'attend plus la v2 : elle devient un mode du skill (note de l'étape 26)"
+      }
+    },
+    {
+      "n": 10,
+      "phase": "besoin",
+      "dimension": "valeur",
+      "question": "Qu'est-ce qui rendra le cadrage de Poucet meilleur que les validateurs d'idées, BMAD ou Spec Kit ?",
+      "decision": "Quatre atouts ensemble : trouver l'angle neuf en confrontant l'idée à l'existant pendant l'échange ; prendre les choses dans le bon ordre (problème avant solution, une question à la fois) ; un chemin traçable (options écartées, pistes, retours en arrière) ; un guide neutre et honnête.",
+      "raison": "Les validateurs notent une idée déjà formée, BMAD et Spec Kit la mettent en forme ; Poucet aide à la construire.",
+      "ecartees": [
+        {
+          "option": "Noter l'idée avec un score de viabilité",
+          "raison": "C'est ce que font déjà les validateurs ; Poucet aide à trouver l'angle au lieu de noter."
+        }
+      ],
+      "pistes": [],
+      "sources": [
+        "https://preuve.ai/about.md",
+        "https://peerlist.io/rainbow86/project/validmyidea",
+        "https://peerlist.io/lateisha/project/satisfice",
+        "https://startupdeckai-h717.onrender.com/"
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 11,
+      "phase": "besoin",
+      "dimension": "contraintes",
+      "question": "Le résumé est-il juste ?",
+      "decision": "Résumé validé, avec une précision : aujourd'hui Poucet n'est qu'un system prompt. La v1 doit s'utiliser dans le chat de Claude (claude.ai) avec une méthode plus efficace qu'un simple prompt.",
+      "raison": "L'usage visé est le chat ; le prompt seul ne suffit pas.",
+      "ecartees": [
+        {
+          "option": "Garder Poucet sous forme de system prompt seul",
+          "raison": "Jugé pas assez efficace par l'utilisateur."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Formats possibles dans claude.ai : skill, projet (instructions + fichiers), connecteur MCP, artifact interactif",
+          "raison": "Question technique soulevée en cours de route ; à trancher en phase 2."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 12,
+      "phase": "besoin",
+      "dimension": "probleme",
+      "question": "Qu'est-ce qui rend le system prompt peu efficace dans le chat ?",
+      "decision": "Le processus actuel est trop long et laborieux ; le but est de trouver rapidement une idée géniale et originale.",
+      "raison": "La lenteur du cadrage actuel (jusqu'à 15 questions, puis les phases 2 et 3) freine l'objectif principal.",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Un mode rapide : quelques questions décisives, puis plusieurs angles d'idée à comparer",
+          "raison": "Répond au besoin de vitesse sans perdre la trace."
+        }
+      ],
+      "tension": "Le CLAUDE.md actuel se méfie de ce qui promet d'aller vite et ne court qu'une fois le chemin sûr ; l'utilisateur veut de la vitesse. À concilier.",
+      "abandonnee": false
+    },
+    {
+      "n": 13,
+      "phase": "besoin",
+      "dimension": "utilisateurs",
+      "question": "Avec quoi arrives-tu quand tu lances Poucet ?",
+      "decision": "C'est la première utilisation réelle de Poucet, sur Poucet lui-même, et l'utilisateur trouve déjà la méthode un peu lente.",
+      "raison": "Retour direct sur cette session : une question par tour, 13 tours, c'est trop long pour lui.",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Poser plusieurs questions indépendantes en un seul tour (l'outil en permet jusqu'à 4)",
+          "raison": "Divise le nombre de tours sans perdre la trace."
+        },
+        {
+          "piste": "Réduire le plafond de la phase 1 et proposer « décide pour moi » plus tôt sur les dimensions secondaires",
+          "raison": "Les dimensions contraintes, risques, ressources et succès ont des seuils bas."
+        },
+        {
+          "piste": "Utiliser cette session comme premier cas de test de Poucet",
+          "raison": "Elle montre concrètement où la méthode ralentit."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 14,
+      "phase": "besoin",
+      "dimension": "valeur",
+      "question": "Comment finir le cadrage ? (l'utilisateur répond par une question : comment rendre Poucet original et nouveau ?)",
+      "decision": "En attente : cinq angles d'originalité proposés, à choisir à l'étape suivante.",
+      "raison": "L'utilisateur veut d'abord savoir ce qui rendrait Poucet original avant de finir le cadrage.",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Explorer vite, sécuriser lentement : 3 questions puis 3 angles d'idée contrastés, avant le cadrage tracé",
+          "raison": "Répond à la lenteur et à l'objectif d'idée originale."
+        },
+        {
+          "piste": "Casser les évidences de l'existant : repérer ce que tous les concurrents supposent et en inverser une",
+          "raison": "Méthode pour produire de l'originalité."
+        },
+        {
+          "piste": "Les sentiers non pris comme réserve d'idées",
+          "raison": "Réutilise la trace pour générer des alternatives."
+        },
+        {
+          "piste": "Une forêt personnelle d'un projet à l'autre",
+          "raison": "Mémoire des pistes entre projets, peu couverte par l'existant."
+        },
+        {
+          "piste": "L'essai du déjà-fait en 30 secondes",
+          "raison": "Honnêteté immédiate sur l'existant."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 15,
+      "phase": "besoin",
+      "dimension": "fonctionnalites",
+      "question": "Quels angles d'originalité mettre au cœur de Poucet v1 ?",
+      "decision": "Aucun angle choisi pour l'instant. La priorité exprimée : que Poucet donne un chemin clair de réalisation.",
+      "raison": "L'utilisateur veut avant tout une sortie concrète et ordonnée, pas une exploration de plus.",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Les cinq angles d'originalité de l'étape 14 restent ouverts",
+          "raison": "Non tranchés ; à reprendre si la v1 manque de différence."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 16,
+      "phase": "besoin",
+      "dimension": "succes",
+      "question": "Le résumé et le chemin de réalisation conviennent-ils ?",
+      "decision": "Résumé non validé tel quel : l'utilisateur veut un projet utile, qui sera vraiment utilisé, et facile à utiliser.",
+      "raison": "« Sera utilisé » laisse entendre d'autres utilisateurs que l'auteur, ce qui contredit l'étape 1 (« moi d'abord »).",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Critère de succès fondé sur l'usage par d'autres (nombre de personnes qui vont jusqu'au chemin de réalisation)",
+          "raison": "Découle de « sera utilisé »."
+        }
+      ],
+      "contradiction_avec": 1,
+      "abandonnee": false
+    },
+    {
+      "n": 17,
+      "phase": "besoin",
+      "dimension": "utilisateurs",
+      "question": "Finalement, Poucet v1, c'est pour qui ?",
+      "decision": "Moi d'abord, puis d'autres vite : Poucet doit être partageable dès la v1 (un lien ou une installation simple).",
+      "raison": "Résout la contradiction entre l'étape 1 (« moi d'abord ») et l'étape 16 (« sera utilisé »).",
+      "ecartees": [
+        {
+          "option": "Pour moi seulement",
+          "raison": "L'utilisateur veut que d'autres s'en servent rapidement."
+        },
+        {
+          "option": "D'autres dès le départ, avec un public précis",
+          "raison": "Rouvrirait tout le cadrage ; l'auteur reste le premier testeur."
+        }
+      ],
+      "pistes": [],
+      "precise": 1,
+      "abandonnee": false
+    },
+    {
+      "n": 18,
+      "phase": "besoin",
+      "dimension": "fonctionnalites",
+      "question": "Le résumé corrigé et les critères conviennent-ils ?",
+      "decision": "Non validé : le Poucet actuel (prompt + trace JSON, phases fixes) est trop rigide. Poucet doit suivre le développement du développeur, pas seulement le précéder.",
+      "raison": "L'utilisateur veut un compagnon qui s'adapte à la façon dont le projet avance réellement.",
+      "ecartees": [
+        {
+          "option": "Cadrage figé en trois phases, terminé avant tout code",
+          "raison": "Jugé trop rigide."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Poucet relit le dépôt (commits, fichiers) et met à jour le chemin au fil du développement",
+          "raison": "Suivre le développement suppose de voir le code."
+        }
+      ],
+      "remet_en_question": [
+        9,
+        11
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 19,
+      "phase": "besoin",
+      "dimension": "fonctionnalites",
+      "question": "La reformulation (compagnon qui suit le développement) est-elle juste ?",
+      "decision": "Poucet ne doit pas être une série de questions rigide.",
+      "raison": "Retour direct sur la méthode et sur cette session elle-même : 18 tours de questions à choix fixes.",
+      "ecartees": [
+        {
+          "option": "Questionnaire à choix multiples à chaque tour, avec seuils et plafond de questions",
+          "raison": "Jugé rigide par l'utilisateur."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Garder l'esprit de Poucet (trace, sentiers non pris, honnêteté, neutralité) et supprimer la procédure (tableaux de seuils, une question par tour, 15 questions)",
+          "raison": "L'esprit est apprécié ; c'est la mécanique qui pèse."
+        },
+        {
+          "piste": "Conversation libre : Poucet note en silence décisions, options écartées et pistes, et n'intervient que sur une contradiction, une décision sans raison, un raccourci tentant ou une demande",
+          "raison": "Suivre le développeur au lieu de le faire suivre un script."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 20,
+      "phase": "besoin",
+      "dimension": "valeur",
+      "question": "Comment voudrais-tu que ça se passe la prochaine fois que tu as une idée ?",
+      "decision": "Poucet est une sorte de pote curieux : il pose des questions naïves mais pertinentes, et oriente vers une solution géniale.",
+      "raison": "Remplace le consultant méthodique par une présence conversationnelle et légère.",
+      "ecartees": [
+        {
+          "option": "Le consultant en conception qui déroule une méthode",
+          "raison": "Trop rigide, trop lent."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Écrire Poucet comme une personnalité (ton, curiosité, types de questions naïves) plutôt que comme une procédure",
+          "raison": "Un pote se définit par sa façon d'être, pas par un script."
+        }
+      ],
+      "tension": "« Oriente vers une solution » contre « aucune décision à la place de l'humain » : un pote suggère et argumente, il ne choisit pas pour toi.",
+      "abandonnee": false
+    },
+    {
+      "n": 21,
+      "phase": "besoin",
+      "dimension": "fonctionnalites",
+      "question": "La dernière fois qu'on t'a aidé à débloquer une idée, qu'a fait la personne ?",
+      "decision": "Elle a proposé des idées. Poucet doit faire pareil : proposer activement des idées, pas seulement poser des questions.",
+      "raison": "C'est ce qui a réellement débloqué l'utilisateur ; le Poucet actuel ne le fait pas (il expose seulement des options déduites des réponses).",
+      "ecartees": [
+        {
+          "option": "Neutralité stricte : ne jamais proposer, seulement exposer des options",
+          "raison": "Empêche le pote de faire ce qui aide vraiment."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Distinguer proposer (Poucet lance des idées, dit laquelle il préfère et pourquoi) et décider (toujours l'utilisateur)",
+          "raison": "Garde la règle « pas de décision à ta place » sans brider les idées."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 22,
+      "phase": "besoin",
+      "dimension": "valeur",
+      "question": "Laquelle des idées proposées te fait réagir ?",
+      "decision": "Oui à l'idée (les trois variantes dès le premier message), mais avec un langage d'expert : un pote curieux qui maîtrise son sujet, pas un ami qui simplifie tout.",
+      "raison": "La naïveté porte sur les questions, pas sur le niveau : le vocabulaire et les références doivent être précis.",
+      "ecartees": [
+        {
+          "option": "Langage volontairement simple, sans jargon",
+          "raison": "L'utilisateur veut une expertise visible."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Nommer les concepts experts au bon moment (job-to-be-done, MVP, effet réseau, coût d'acquisition, dette technique…) en une phrase, sans cours magistral",
+          "raison": "Montre l'expertise sans casser le ton du pote."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 23,
+      "phase": "besoin",
+      "dimension": "valeur",
+      "question": "Ce ton de pote expert te parle-t-il ?",
+      "decision": "Oui. Réécriture de CLAUDE.md : une personnalité (pote curieux, questions naïves, langage d'expert, force de proposition) plutôt qu'une procédure ; trois variantes dès le premier message ; trace silencieuse ; suivi du développement ; CHEMIN.md centré sur le chemin de réalisation.",
+      "raison": "L'utilisateur valide le ton montré dans l'exemple.",
+      "ecartees": [
+        {
+          "option": "CLAUDE.md v0 (consultant, phases, seuils, 15 questions)",
+          "raison": "Trop rigide et trop lent ; archivé dans archives/CLAUDE-v0.md."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Tester la v1 sur une vraie idée et chronométrer jusqu'au chemin clair",
+          "raison": "Critère de succès : moins de 30 minutes sans recadrer Claude."
+        },
+        {
+          "piste": "Choisir ensuite le format de diffusion dans le chat (skill, projet, connecteur MCP)",
+          "raison": "Pour le partager vite à d'autres (étape 17)."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 24,
+      "sujet": "technique",
+      "decision": "Poucet devient un ensemble de mini-skills (un par moment clé), tournés vers le lancement rapide d'un business à partir d'une idée qu'on creuse.",
+      "raison": "Choix de l'utilisateur : mini-skills plutôt qu'un skill unique ou un CLAUDE.md ; usage dans le chat et partage (étapes 11 et 17).",
+      "ecartees": [
+        {
+          "option": "Un seul skill poucet (conversion du CLAUDE.md)",
+          "raison": "L'utilisateur préfère plusieurs compétences."
+        },
+        {
+          "option": "Skill qui génère des skills pour le projet (recrutement v2)",
+          "raison": "Poucet d'abord ; reste la v2 (étape 9)."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Partir des skills existants de validation (Startup Idea Validator, Startup Validating) comme repoussoirs : ils notent ou déroulent des portes, Poucet propose",
+          "raison": "Recherche de l'existant."
+        },
+        {
+          "piste": "Tester chaque skill : déclenchement, cohérence sur 4-5 idées, comparaison avec/sans skill",
+          "raison": "Méthode de test trouvée en recherche."
+        }
+      ],
+      "virage": "Le but s'élargit : on passe de 'chemin de réalisation' à 'lancer un business' (client, offre, prix, premiers clients).",
+      "abandonnee": false,
+      "remplacee_par": {
+        "etape": 25,
+        "sur": "la forme (mini-skills remplacés par un seul skill avec aiguillage) ; le virage business reste en question (étape 34)"
+      }
+    },
+    {
+      "n": 25,
+      "sujet": "technique",
+      "decision": "Un seul skill poucet avec un aiguillage (switch) : SKILL.md contient le ton commun et une table qui choisit le mode selon le moment de la conversation (idee, existant, client, offre, test, nom, chemin, lancement, suivi).",
+      "raison": "Proposition de l'utilisateur ; règle le problème du ton commun (dans claude.ai, chaque skill est un zip séparé qui ne peut pas lire les fichiers d'un autre) et simplifie l'installation : un seul zip.",
+      "ecartees": [
+        {
+          "option": "Dix skills séparés",
+          "raison": "Ton dupliqué, déclenchements concurrents, dix zips à installer."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Variante proposée : SKILL.md = aiguillage court, un fichier par mode dans modes/ chargé seulement quand il sert",
+          "raison": "Garde le skill léger (chargement progressif) tout en restant un seul skill."
+        },
+        {
+          "piste": "Forçage explicite d'un mode par l'utilisateur (« poucet test »)",
+          "raison": "Complète la détection automatique."
+        }
+      ],
+      "precise": 24,
+      "abandonnee": false,
+      "remplacee_par": {
+        "etape": 40,
+        "sur": "la forme de la v1"
+      }
+    },
+    {
+      "n": 26,
+      "sujet": "equipe",
+      "decision": "Poucet recrute une équipe d'agents vivante : elle grandit (recrutements proposés quand le projet en a besoin) et s'adapte (fiches de poste et skills mis à jour quand le projet change).",
+      "raison": "Choix de l'utilisateur : une équipe figée se périme dès que le projet bouge ; cohérent avec l'étape 18 (suivre le développement).",
+      "ecartees": [
+        {
+          "option": "Recruter une seule fois à la fin du cadrage",
+          "raison": "Équipe figée alors que le projet évolue."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "L'entretien annuel : chaque recadrage humain est noté et sert à réécrire la fiche ou le skill de l'agent concerné",
+          "raison": "Répond au problème de départ (étape 6) et donne un critère mesurable ; pas encore confirmé par l'utilisateur."
+        },
+        {
+          "piste": "Les fiches de poste renvoient aux étapes de trace.json au lieu de recopier les décisions",
+          "raison": "Une décision changée met à jour toute l'équipe d'un coup."
+        }
+      ],
+      "remet_en_question": [
+        9
+      ],
+      "note": "La tension avec l'étape 9 (équipe en v2) est levée : l'équipe devient un mode 'equipe' du skill poucet (étape 25).",
+      "abandonnee": false
+    },
+    {
+      "n": 27,
+      "sujet": "equipe",
+      "decision": "Deux niveaux : l'entreprise (tous les spécialistes recrutés, elle ne fait que grandir) et l'équipe (les spécialistes actifs, qui change au fil du projet). Un nouveau spécialiste est recruté dans l'entreprise dès qu'on en a besoin. Les réunions permettent de consulter un spécialiste hors équipe sans l'y faire entrer.",
+      "raison": "Proposition de l'utilisateur. Répond aussi à la question du déclenchement : on recrute au besoin, pas à heure fixe.",
+      "ecartees": [
+        {
+          "option": "Une seule équipe qui grossit, avec un plafond",
+          "raison": "Remplacé par la séparation entreprise / équipe ; le plafond ne s'applique plus qu'à l'équipe active."
+        },
+        {
+          "option": "Revoir l'équipe à la fin de chaque session ou à chaque commit",
+          "raison": "On recrute au besoin."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Entreprise dans .poucet/entreprise/ (hors de .claude/agents/, pour ne pas charger tout le monde) ; équipe active dans .claude/agents/",
+          "raison": "Claude Code voit tous les agents de .claude/agents/ ; les inactifs doivent vivre ailleurs."
+        },
+        {
+          "piste": "Réunion menée par la session principale (le chef), qui interroge chaque participant tour à tour ; compte rendu dans .poucet/reunions/ et décisions dans trace.json",
+          "raison": "Les sous-agents ne peuvent pas se parler ni se lancer entre eux."
+        }
+      ],
+      "precise": 26,
+      "abandonnee": false
+    },
+    {
+      "n": 28,
+      "sujet": "equipe",
+      "decision": "Les réunions servent à confronter plusieurs agents entre eux, pas seulement à recueillir des avis.",
+      "raison": "Souhait de l'utilisateur : faire émerger les désaccords entre métiers avant de décider.",
+      "ecartees": [
+        {
+          "option": "Réunion = simple consultation d'avis",
+          "raison": "L'utilisateur veut une vraie confrontation."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Protocole anti-conformisme : 1er tour à l'aveugle, rôles différents, désaccords listés sans vote à la majorité",
+          "raison": "Les études sur le débat entre LLM montrent que les agents ont tendance à s'aligner et que l'exactitude peut baisser (arXiv 2509.05396, 2606.00820)."
+        },
+        {
+          "piste": "Format procès : un agent défend l'option, un autre l'attaque",
+          "raison": "Utile quand il y a deux options claires."
+        },
+        {
+          "piste": "Un contradicteur permanent dans l'entreprise, convoqué aux grosses décisions",
+          "raison": "Garantit qu'une décision est toujours attaquée."
+        }
+      ],
+      "question_ouverte": "Qui tranche à la fin d'une confrontation : l'utilisateur ou le chef ?",
+      "precise": 27,
+      "abandonnee": false
+    },
+    {
+      "n": 29,
+      "sujet": "equipe",
+      "decision": "Une réunion fonctionne comme un cabinet de conseil : les agents se confrontent pour produire des solutions possibles, et c'est l'utilisateur qui trouve la sienne et choisit.",
+      "raison": "Réponse à la question ouverte de l'étape 28 : l'utilisateur tranche, la réunion éclaire.",
+      "ecartees": [
+        {
+          "option": "Le chef tranche à la fin de la réunion",
+          "raison": "L'utilisateur veut choisir lui-même."
+        },
+        {
+          "option": "Vote à la majorité des agents",
+          "raison": "Pousse au conformisme ; l'utilisateur choisit."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Livrable de réunion : la question posée, 2 à 4 options (qui la porte, ce qu'elle apporte, ce qu'elle risque, ce qu'elle coûte), les désaccords qui restent, l'avis du chef, et une case vide 'ta décision'",
+          "raison": "Format de note de conseil, prête à trancher."
+        }
+      ],
+      "note": "Le « consulting » vaut pour le format des réunions, pas pour le ton de Poucet, qui reste celui d'un pote (étape 23).",
+      "precise": 28,
+      "abandonnee": false
+    },
+    {
+      "n": 30,
+      "sujet": "equipe",
+      "decision": "Poucet est le premier employé de l'entreprise : le scribe. Il est toujours dans l'équipe, tient la trace, rédige les comptes rendus de réunion et tient le registre de l'entreprise.",
+      "raison": "Choix de l'utilisateur ; colle au nom (le Petit Poucet sème des cailloux pour retrouver le chemin).",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Le scribe ne peut pas être un sous-agent classique : un sous-agent ne voit que ce qu'on lui transmet. Il vit dans la session principale (skill) ou dans un hook de fin de session qui lui passe la conversation.",
+          "raison": "Contrainte technique de Claude Code."
+        }
+      ],
+      "question_ouverte": "Le scribe reste-t-il aussi le pote curieux qui propose (étapes 20 à 23), ou ce rôle passe-t-il à un autre employé ?",
+      "abandonnee": false
+    },
+    {
+      "n": 31,
+      "sujet": "equipe",
+      "decision": "Poucet est l'associé : il garde les deux rôles, scribe (trace, comptes rendus, registre) et pote curieux (questions naïves, propositions, avocat du diable).",
+      "raison": "Choix de l'utilisateur, « pour le moment ».",
+      "ecartees": [
+        {
+          "option": "Un deuxième employé dédié au cadrage, Poucet limité au rôle de scribe",
+          "raison": "Pas nécessaire pour l'instant."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Séparer les deux rôles plus tard si l'un étouffe l'autre",
+          "raison": "Choix annoncé comme provisoire."
+        }
+      ],
+      "precise": 30,
+      "abandonnee": false
+    },
+    {
+      "n": 32,
+      "sujet": "equipe",
+      "decision": "L'utilisateur est le fondateur : il tranche. Premier recrutement après Poucet : un agent RH, chargé d'écrire les fiches de poste et de gérer l'entreprise et l'équipe.",
+      "raison": "Le recrutement est le mécanisme central de l'entreprise ; autant qu'un spécialiste s'en occupe dès le départ.",
+      "ecartees": [
+        {
+          "option": "Démarrer avec Bâtisseur, Vendeur et Client",
+          "raison": "Le fondateur veut d'abord quelqu'un qui recrute."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Partage des rôles : Poucet repère le besoin et le note, le RH écrit la fiche, le fondateur valide l'embauche",
+          "raison": "Évite que Poucet et le RH se marchent dessus (Poucet proposait les recrutements à l'étape 26)."
+        },
+        {
+          "piste": "Trois profils de RH proposés : méthodique, chasseur de têtes, épreuve d'embauche",
+          "raison": "Choix à faire par le fondateur."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 33,
+      "sujet": "nom",
+      "decision": "Les employés portent des noms allégoriques, comme Poucet. Thème proposé : les contes (Poucet vient de Perrault).",
+      "raison": "Demande du fondateur ; un nom allégorique dit le caractère du rôle et rend l'entreprise mémorable.",
+      "ecartees": [
+        {
+          "option": "Prénoms ordinaires (Hélène, Malik, Sam)",
+          "raison": "Remplacés par des noms allégoriques."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Distribution proposée : Marraine (RH), Brique (Bâtisseur), Chat Botté (Vendeur), Boucle d'or (Client), le Loup (futur concurrent), le Génie (juriste), Shéhérazade (rédactrice), le Miroir (designer), la Fourmi (finances)",
+          "raison": "Chaque personnage incarne déjà le métier dans son conte."
+        },
+        {
+          "piste": "Le nom est allégorique, mais la description de l'agent reste explicite sur son métier",
+          "raison": "C'est la description qui fait déclencher l'agent, pas son nom."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 34,
+      "sujet": "equipe",
+      "decision": "Premier recrutement testé : Marraine (RH, équipe active) a écrit la fiche et l'épreuve de Boucle d'or (cliente simulée). Épreuve réussie après une correction de la fiche ; embauche recommandée, en attente du fondateur.",
+      "raison": "Test du mécanisme fiche + épreuve + évaluation + correction (étape 32).",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Critère de recrutement raté par défaut : sort du périmètre, ignore le fil, travail générique, ne sait pas dire quand il a fini",
+          "raison": "Le fondateur n'a pas encore précisé ; écrit dans la fiche de Marraine."
+        }
+      ],
+      "question_ouverte": "Boucle d'or signale que le virage « lancer un business » (étape 24) ne s'appuie sur aucun besoin exprimé par la cible (l'auteur, étapes 1 et 17), et que le zip pour le chat ne porte pas une entreprise qui vit dans un dépôt. À trancher par le fondateur : changer la cible, ou revoir le virage.",
+      "abandonnee": false
+    },
+    {
+      "n": 35,
+      "sujet": "angle",
+      "decision": "Poucet devient une sim de création d'entreprise, un jeu de rôle théâtral : à partir d'un seul utilisateur (le fondateur), il génère toute l'entreprise (associé, RH, employés, clients, concurrents, réunions, crises). Premier brouillon de system prompt : prompts/poucet-sim.md (v0.1), à adapter au fil des essais. Ce dépôt sert d'exemple, avec le fondateur comme premier cas.",
+      "raison": "Demande du fondateur : une sim théâtrale de la vie en entreprise, générable par n'importe qui seul.",
+      "ecartees": [
+        {
+          "option": "Remplacer tout de suite CLAUDE.md par la sim",
+          "raison": "Brouillon à tester d'abord ; CLAUDE.md reste en place jusqu'à validation (puis archivé comme le v0)."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Garde-fous intégrés : faits vérifiés et sourcés, personnages simulés jamais présentés comme réels, chaque scène finit par un pas dans la vraie vie, « en bref » pour sortir du théâtre",
+          "raison": "Le jeu ne doit pas ralentir (étape 12) ni tromper (épreuve de Boucle d'or)."
+        },
+        {
+          "piste": "Le Loup incarne la recherche de l'existant dès le premier message",
+          "raison": "Met en scène l'étape « vérifier l'existant » du CLAUDE.md."
+        },
+        {
+          "piste": "Existant proche : ChatDev (OpenBMB), entreprise logicielle simulée par des agents qui codent seuls",
+          "raison": "Poucet s'en distingue : le fondateur décide, la sim vise la création d'entreprise et finit par des pas réels."
+        }
+      ],
+      "note": "La question de l'étape 34 (business ou réalisation) penche vers le business, sous forme de sim ; Boucle d'or reste à embaucher.",
+      "abandonnee": false,
+      "remplacee_par": {
+        "etape": 40,
+        "sur": "la forme de la v1"
+      }
+    },
+    {
+      "n": 36,
+      "sujet": "technique",
+      "decision": "En attente : état de la recherche sur la qualité des systèmes multi-agents, et idées pour améliorer réellement les résultats de l'entreprise Poucet.",
+      "raison": "Le fondateur demande si une entreprise multi-agent avec profils augmente vraiment la qualité.",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Les profils (personas) seuls n'améliorent pas la justesse ; le gain vient des contextes séparés, de la vérification et des fiches corrigées",
+          "raison": "arXiv 2311.10054 (personas), Anthropic multi-agent research system (+90 % en recherche, ~15x tokens), arXiv 2503.13657 (MAST : échecs surtout dus à la spécification, au désalignement entre agents et à la vérification)."
+        },
+        {
+          "piste": "Un seul agent écrit, les autres conseillent",
+          "raison": "Cognition, 2025 puis 2026 : les essaims d'agents qui écrivent tous restent fragiles."
+        },
+        {
+          "piste": "Match retour : même idée, Claude seul contre la troupe, jugé à l'aveugle par le fondateur, recadrages comptés",
+          "raison": "Sans mesure, le gain de la troupe reste une croyance."
+        },
+        {
+          "piste": "Citations vérifiées par machine : un script ouvre chaque lien cité par le Loup ou Boucle d'or",
+          "raison": "Les clients simulés inventent des sources plausibles (épreuve de Boucle d'or)."
+        },
+        {
+          "piste": "Vraie diversité : mélanger les modèles (local Ollama et Claude) au lieu de changer seulement les noms",
+          "raison": "Des agents homogènes convergent (étape 28)."
+        },
+        {
+          "piste": "Nuit d'idées : surgénérer, dédoublonner par embeddings, classer par duels",
+          "raison": "arXiv 2409.04109 : environ 200 idées uniques sur 4000 ; Meincke et al. : la chaîne de pensée augmente la diversité."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 37,
+      "sujet": "contraintes",
+      "decision": "Budget limité : l'entreprise doit rester sobre en tokens et tenir dans un abonnement Claude standard, plus du calcul local gratuit.",
+      "raison": "Le fondateur le précise ; le multi-agent coûte environ 15 fois plus de tokens qu'un chat (étape 36).",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "La troupe se joue dans un seul contexte par défaut ; de vrais sous-agents seulement pour les réunions qui comptent",
+          "raison": "La séparation des contextes ne paie que pour le tour à l'aveugle."
+        },
+        {
+          "piste": "model: haiku dans les fiches des agents d'appoint (Boucle d'or, le Loup)",
+          "raison": "Champ model des sous-agents Claude Code ; garde le modèle fort pour Poucet et Brique."
+        },
+        {
+          "piste": "Réunion plafonnée : 3 participants, un tour à l'aveugle et une réplique chacun",
+          "raison": "Borne le coût de chaque réunion."
+        },
+        {
+          "piste": "Volume la nuit sur Ollama en local, jugement le matin avec Claude",
+          "raison": "Le calcul local ne coûte que l'électricité."
+        },
+        {
+          "piste": "Recherche web gratuite en local (SearXNG) pour les agents de nuit",
+          "raison": "Évite une API payante."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 38,
+      "sujet": "equipe",
+      "decision": "Recrutement d'Ariane, relectrice du fil : elle relit à froid la trace et le dépôt, déroule le chemin et repère les nœuds, sans trancher. Fiche par Marraine, épreuve ratée sur la forme (sourçage, deux préférées) puis réussie après correction. Embauche recommandée, en attente du fondateur.",
+      "raison": "Demande du fondateur ; un contexte neuf voit les nœuds que Poucet, pris dans la conversation, ne voit plus.",
+      "ecartees": [
+        {
+          "option": "Confier ce travail à Poucet seul",
+          "raison": "Poucet est ancré dans la conversation ; Ariane arrive sans mémoire de l'échange."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Retirer la grille de réponses du dépôt pendant une épreuve",
+          "raison": "L'agent testé lit le dépôt ; sinon il peut tomber sur les nœuds de référence."
+        },
+        {
+          "piste": "Trois regards indépendants (Boucle d'or, le récapitulatif de Poucet, Ariane) pointent le même nœud : business ou réalisation",
+          "raison": "Signal fort que c'est la prochaine décision à prendre."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 39,
+      "sujet": "equipe",
+      "decision": "Le fondateur embauche Boucle d'or (hors équipe active) et Ariane (équipe active), et demande de faire tourner Ariane.",
+      "raison": "Épreuves réussies (étapes 34 et 38).",
+      "ecartees": [],
+      "pistes": [],
+      "note": "Rangement fait à la suite des nœuds d'Ariane : étape 7 marquée abandonnée, étapes 9 et 24 annotées remplacee_par.",
+      "abandonnee": false
+    },
+    {
+      "n": 40,
+      "sujet": "angle",
+      "decision": "Poucet est un dépôt GitHub à forker : une équipe de personas mythiques (agents) qui examinent une idée sous des angles très différents et se passent la balle jusqu'à sa validation. L'idée peut être pour soi ou pour un business. Le ton reste pro ; chaque réponse prend la forme d'un dialogue de réunion où chacun pose des questions ou propose des solutions.",
+      "raison": "Synthèse du fondateur. Répond à la question des étapes 34, 38 et 39 (business ou réalisation : les deux, selon le projet) et à la forme de la v1 (un dépôt modèle, ni zip ni sim théâtrale).",
+      "ecartees": [
+        {
+          "option": "Choisir entre business et projet personnel",
+          "raison": "Les deux, au choix de la personne qui forke."
+        },
+        {
+          "option": "Zip de skill pour le chat (étape 25)",
+          "raison": "Remplacé par un dépôt à forker, où les agents vivent naturellement."
+        },
+        {
+          "option": "Sim théâtrale (étape 35)",
+          "raison": "Le ton reste pro : on garde les personas et le dialogue, pas les didascalies."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Les dialogues se jouent dans un seul contexte par défaut ; de vrais sous-agents seulement pour un tour à l'aveugle sur une décision clé",
+          "raison": "C'est la forme la moins coûteuse (étape 37)."
+        },
+        {
+          "piste": "Passage de balle explicite : chaque persona finit par « je passe la balle à X parce que… »",
+          "raison": "Le relais suit les questions ouvertes au lieu de phases imposées (étape 19)."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 41,
+      "sujet": "nom",
+      "decision": "Proposition : Poucet devient l'orchestrateur et le scribe ; les questions naïves passent à un nouveau persona, l'Âne (tiré du folklore : Peau d'Âne, les Musiciens de Brême, les fables de La Fontaine, et non le personnage de Shrek). En attente de l'accord du fondateur.",
+      "raison": "Le fondateur veut un orchestrateur et un « âne qui fait l'idiot » ; l'étape 31 laissait la séparation des rôles de Poucet ouverte (« pour le moment »).",
+      "ecartees": [
+        {
+          "option": "Reprendre Shrek ou son âne",
+          "raison": "Personnages protégés : le livre de William Steig (1990) est encore sous droit d'auteur, et les personnages du film appartiennent à DreamWorks. À éviter : le nom, le duo ogre vert et âne bavard, les références au film."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "L'Ogre en investisseur ou jury de validation, dernière épreuve de l'idée",
+          "raison": "Dans Le Petit Poucet, Poucet doit déjouer l'Ogre ; l'ogre du folklore (Perrault) est libre de droits."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 42,
+      "sujet": "technique",
+      "decision": "Construction du dépôt à forker : CLAUDE.md (Poucet orchestrateur et règles), un fichier par persona dans .claude/agents/ (10 agents), 5 skills courts (scene, trace, sources, embauche, chemin), une trace vide. Les scènes sont improvisées : des ingrédients et une palette de formes, pas de déroulé ; règles anti-répétition. Notre histoire part dans exemples/poucet/, l'ancien CLAUDE.md dans archives/CLAUDE-v1.md.",
+      "raison": "Plan validé par le fondateur (étapes 40 à 41 et demandes suivantes : fichiers par agent, skills courts, improvisation).",
+      "ecartees": [
+        {
+          "option": "Toute l'équipe dans un seul CLAUDE.md",
+          "raison": "Le fondateur préfère un fichier par agent."
+        },
+        {
+          "option": "Déroulé fixe des scènes et phrases fétiches",
+          "raison": "Le fondateur veut des scènes improvisées et toujours différentes."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Tester le dépôt dans une nouvelle session Claude Code, sur une vraie idée, et faire le match retour",
+          "raison": "Étapes 23 et 36."
+        }
+      ],
+      "abandonnee": false
+    }
+  ],
+  "criteres": [],
+  "etat_dimensions": {
+    "probleme": 0.8,
+    "utilisateurs": 0.85,
+    "existant": 0.75,
+    "valeur": 0.75,
+    "fonctionnalites": 0.7,
+    "contraintes": 0.6,
+    "risques": 0.5,
+    "ressources": 0.4,
+    "succes": 0.6
+  },
+  "decisions_par_defaut": [
+    {
+      "etape": 34,
+      "decision": "Définition d'un recrutement raté écrite par défaut dans la fiche de Marraine.",
+      "raison": "Question posée au fondateur restée sans réponse."
+    }
+  ],
+  "verdict": null,
+  "fin_phase_1": {
+    "raison": "15 questions atteintes",
+    "statut": "méthode remise en question : passage en conversation libre"
+  }
+}
