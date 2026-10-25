@@ -596,7 +596,11 @@
         }
       ],
       "precise": 24,
-      "abandonnee": false
+      "abandonnee": false,
+      "remplacee_par": {
+        "etape": 40,
+        "sur": "la forme de la v1"
+      }
     },
     {
       "n": 26,
@@ -829,7 +833,11 @@
         }
       ],
       "note": "La question de l'étape 34 (business ou réalisation) penche vers le business, sous forme de sim ; Boucle d'or reste à embaucher.",
-      "abandonnee": false
+      "abandonnee": false,
+      "remplacee_par": {
+        "etape": 40,
+        "sur": "la forme de la v1"
+      }
     },
     {
       "n": 36,
@@ -926,6 +934,37 @@
       "ecartees": [],
       "pistes": [],
       "note": "Rangement fait à la suite des nœuds d'Ariane : étape 7 marquée abandonnée, étapes 9 et 24 annotées remplacee_par.",
+      "abandonnee": false
+    },
+    {
+      "n": 40,
+      "sujet": "angle",
+      "decision": "Poucet est un dépôt GitHub à forker : une équipe de personas mythiques (agents) qui examinent une idée sous des angles très différents et se passent la balle jusqu'à sa validation. L'idée peut être pour soi ou pour un business. Le ton reste pro ; chaque réponse prend la forme d'un dialogue de réunion où chacun pose des questions ou propose des solutions.",
+      "raison": "Synthèse du fondateur. Répond à la question des étapes 34, 38 et 39 (business ou réalisation : les deux, selon le projet) et à la forme de la v1 (un dépôt modèle, ni zip ni sim théâtrale).",
+      "ecartees": [
+        {
+          "option": "Choisir entre business et projet personnel",
+          "raison": "Les deux, au choix de la personne qui forke."
+        },
+        {
+          "option": "Zip de skill pour le chat (étape 25)",
+          "raison": "Remplacé par un dépôt à forker, où les agents vivent naturellement."
+        },
+        {
+          "option": "Sim théâtrale (étape 35)",
+          "raison": "Le ton reste pro : on garde les personas et le dialogue, pas les didascalies."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Les dialogues se jouent dans un seul contexte par défaut ; de vrais sous-agents seulement pour un tour à l'aveugle sur une décision clé",
+          "raison": "C'est la forme la moins coûteuse (étape 37)."
+        },
+        {
+          "piste": "Passage de balle explicite : chaque persona finit par « je passe la balle à X parce que… »",
+          "raison": "Le relais suit les questions ouvertes au lieu de phases imposées (étape 19)."
+        }
+      ],
       "abandonnee": false
     }
   ],
