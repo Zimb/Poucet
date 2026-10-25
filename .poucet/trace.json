@@ -21,6 +21,20 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 2,
+      "sujet": "equipe",
+      "decision": "Maui est embauché : la mer, la pêche, la météo marine et les usages du ponton.",
+      "raison": "Figurant entré trois fois dans les scènes ; le fondateur : « Oui, invite Maui ». Épreuve (préparer une sortie pêche depuis Nouméa) réussie sur les 5 critères.",
+      "ecartees": [
+        {
+          "option": "Le laisser figurant",
+          "raison": "Un figurant récurrent sans fiche finit par perdre sa voix."
+        }
+      ],
+      "pistes": [],
+      "abandonnee": false
     }
   ],
   "criteres": [],

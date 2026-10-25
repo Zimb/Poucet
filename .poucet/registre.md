@@ -15,3 +15,4 @@ Tenu par Poucet. Marraine y ajoute les recrues, après accord du fondateur.
 | Ariane | Cohérence du fil | `.claude/agents/ariane.md` | équipe de base | |
 | Marraine | Recrutement | `.claude/agents/marraine.md` | équipe de base | |
 | l'Ogre | Dernière épreuve | `.claude/agents/ogre.md` | équipe de base | |
+| Maui | La mer, la pêche, le terrain | `.claude/agents/maui.md` | 2026-10-25 | Figurant venu trois fois sur l'idée des sorties en mer à Nouméa ; épreuve réussie (5/5) |
