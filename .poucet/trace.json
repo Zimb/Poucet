@@ -469,6 +469,27 @@
       ],
       "tension": "« Oriente vers une solution » contre « aucune décision à la place de l'humain » : un pote suggère et argumente, il ne choisit pas pour toi.",
       "abandonnee": false
+    },
+    {
+      "n": 21,
+      "phase": "besoin",
+      "dimension": "fonctionnalites",
+      "question": "La dernière fois qu'on t'a aidé à débloquer une idée, qu'a fait la personne ?",
+      "decision": "Elle a proposé des idées. Poucet doit faire pareil : proposer activement des idées, pas seulement poser des questions.",
+      "raison": "C'est ce qui a réellement débloqué l'utilisateur ; le Poucet actuel ne le fait pas (il expose seulement des options déduites des réponses).",
+      "ecartees": [
+        {
+          "option": "Neutralité stricte : ne jamais proposer, seulement exposer des options",
+          "raison": "Empêche le pote de faire ce qui aide vraiment."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Distinguer proposer (Poucet lance des idées, dit laquelle il préfère et pourquoi) et décider (toujours l'utilisateur)",
+          "raison": "Garde la règle « pas de décision à ta place » sans brider les idées."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
