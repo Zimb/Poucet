@@ -66,6 +66,16 @@ Proximité avec le fondateur : 0 inconnu · 1 connaissance · 2 habitué · 3 pr
 - Confié :
 - Ce qui a bougé :
 
+### Tracassin
+- Proximité : 0
+- Confié :
+- Ce qui a bougé :
+
+### Titania
+- Proximité : 0
+- Confié :
+- Ce qui a bougé :
+
 ## Les liens
 
 Une ligne par paire qui s'est vraiment croisée. Les autres ne se connaissent pas encore.

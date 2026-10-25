@@ -1196,6 +1196,20 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 54,
+      "sujet": "equipe",
+      "decision": "Deux recrues dans le socle : Tracassin (le nain de Grimm qui file la paille en or : l'argent vite et facile, dans la loi) et Titania (la reine des elfes : l'excellence, n'affirme que ce qu'elle peut établir, précieuse). Chacune a son secret ; Titania évite le regard de l'Âne.",
+      "raison": "Demande du fondateur : « un nain pour gagner de l'argent rapidement et facilement […] et une elfe qui donne l'impression d'avoir toujours raison et qui ne se trompe jamais, assez précieuse ». Épreuves réussies, 5/5 chacune.",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Titania : ajouter une licence, un extrait de scène et une section « quoi garder après le fork » au README",
+          "raison": "Son épreuve : sans licence, personne n'a le droit de réutiliser le dépôt."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],

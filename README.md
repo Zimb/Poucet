@@ -26,6 +26,8 @@ Dès ton premier message, même un simple « salut », un persona tiré au sort 
 | **Marraine** | Recrute les spécialistes qui manquent |
 | **l'Ogre** | La dernière épreuve avant validation |
 | **Maui** | La mer, la pêche, le terrain |
+| **Tracassin** | L'argent vite et facile |
+| **Titania** | L'excellence, la meilleure façon de faire |
 
 Au départ, personne ne se connaît. Au fil des séances, chacun se rapproche de toi, se confie peu à peu, et des affinités se nouent entre eux. Ta troupe ne ressemble à aucune autre.
 
