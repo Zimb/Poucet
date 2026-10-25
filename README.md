@@ -21,7 +21,7 @@ Dès ton premier message, même un simple « salut », un persona tiré au sort 
 | **Brique** | La faisabilité, le MVP, le code |
 | **la Fourmi** | Le temps et l'argent |
 | **Cassandre** | Les risques, l'échec imaginé d'avance |
-| **le Chat Botté** | Le marché (mode business) |
+| **le Chat Botté** | Le public : qui paie, ou à qui le montrer |
 | **Ariane** | La cohérence du fil |
 | **Marraine** | Recrute les angles qui manquent |
 | **l'Ogre** | La dernière épreuve avant validation |
