@@ -672,6 +672,31 @@
       "question_ouverte": "Qui tranche à la fin d'une confrontation : l'utilisateur ou le chef ?",
       "precise": 27,
       "abandonnee": false
+    },
+    {
+      "n": 29,
+      "sujet": "equipe",
+      "decision": "Une réunion fonctionne comme un cabinet de conseil : les agents se confrontent pour produire des solutions possibles, et c'est l'utilisateur qui trouve la sienne et choisit.",
+      "raison": "Réponse à la question ouverte de l'étape 28 : l'utilisateur tranche, la réunion éclaire.",
+      "ecartees": [
+        {
+          "option": "Le chef tranche à la fin de la réunion",
+          "raison": "L'utilisateur veut choisir lui-même."
+        },
+        {
+          "option": "Vote à la majorité des agents",
+          "raison": "Pousse au conformisme ; l'utilisateur choisit."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Livrable de réunion : la question posée, 2 à 4 options (qui la porte, ce qu'elle apporte, ce qu'elle risque, ce qu'elle coûte), les désaccords qui restent, l'avis du chef, et une case vide 'ta décision'",
+          "raison": "Format de note de conseil, prête à trancher."
+        }
+      ],
+      "note": "Le « consulting » vaut pour le format des réunions, pas pour le ton de Poucet, qui reste celui d'un pote (étape 23).",
+      "precise": 28,
+      "abandonnee": false
     }
   ],
   "criteres": [],
