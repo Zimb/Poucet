@@ -397,6 +397,56 @@
       "pistes": [],
       "precise": 1,
       "abandonnee": false
+    },
+    {
+      "n": 18,
+      "phase": "besoin",
+      "dimension": "fonctionnalites",
+      "question": "Le résumé corrigé et les critères conviennent-ils ?",
+      "decision": "Non validé : le Poucet actuel (prompt + trace JSON, phases fixes) est trop rigide. Poucet doit suivre le développement du développeur, pas seulement le précéder.",
+      "raison": "L'utilisateur veut un compagnon qui s'adapte à la façon dont le projet avance réellement.",
+      "ecartees": [
+        {
+          "option": "Cadrage figé en trois phases, terminé avant tout code",
+          "raison": "Jugé trop rigide."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Poucet relit le dépôt (commits, fichiers) et met à jour le chemin au fil du développement",
+          "raison": "Suivre le développement suppose de voir le code."
+        }
+      ],
+      "remet_en_question": [
+        9,
+        11
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 19,
+      "phase": "besoin",
+      "dimension": "fonctionnalites",
+      "question": "La reformulation (compagnon qui suit le développement) est-elle juste ?",
+      "decision": "Poucet ne doit pas être une série de questions rigide.",
+      "raison": "Retour direct sur la méthode et sur cette session elle-même : 18 tours de questions à choix fixes.",
+      "ecartees": [
+        {
+          "option": "Questionnaire à choix multiples à chaque tour, avec seuils et plafond de questions",
+          "raison": "Jugé rigide par l'utilisateur."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Garder l'esprit de Poucet (trace, sentiers non pris, honnêteté, neutralité) et supprimer la procédure (tableaux de seuils, une question par tour, 15 questions)",
+          "raison": "L'esprit est apprécié ; c'est la mécanique qui pèse."
+        },
+        {
+          "piste": "Conversation libre : Poucet note en silence décisions, options écartées et pistes, et n'intervient que sur une contradiction, une décision sans raison, un raccourci tentant ou une demande",
+          "raison": "Suivre le développeur au lieu de le faire suivre un script."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
@@ -415,6 +465,6 @@
   "verdict": null,
   "fin_phase_1": {
     "raison": "15 questions atteintes",
-    "statut": "résumé corrigé, à valider"
+    "statut": "méthode remise en question : passage en conversation libre"
   }
 }
