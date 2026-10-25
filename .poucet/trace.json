@@ -755,6 +755,29 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 33,
+      "sujet": "nom",
+      "decision": "Les employés portent des noms allégoriques, comme Poucet. Thème proposé : les contes (Poucet vient de Perrault).",
+      "raison": "Demande du fondateur ; un nom allégorique dit le caractère du rôle et rend l'entreprise mémorable.",
+      "ecartees": [
+        {
+          "option": "Prénoms ordinaires (Hélène, Malik, Sam)",
+          "raison": "Remplacés par des noms allégoriques."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Distribution proposée : Marraine (RH), Brique (Bâtisseur), Chat Botté (Vendeur), Boucle d'or (Client), le Loup (futur concurrent), le Génie (juriste), Shéhérazade (rédactrice), le Miroir (designer), la Fourmi (finances)",
+          "raison": "Chaque personnage incarne déjà le métier dans son conte."
+        },
+        {
+          "piste": "Le nom est allégorique, mais la description de l'agent reste explicite sur son métier",
+          "raison": "C'est la description qui fait déclencher l'agent, pas son nom."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
