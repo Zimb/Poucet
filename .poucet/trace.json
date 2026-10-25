@@ -564,6 +564,30 @@
       ],
       "virage": "Le but s'élargit : on passe de 'chemin de réalisation' à 'lancer un business' (client, offre, prix, premiers clients).",
       "abandonnee": false
+    },
+    {
+      "n": 25,
+      "sujet": "technique",
+      "decision": "Un seul skill poucet avec un aiguillage (switch) : SKILL.md contient le ton commun et une table qui choisit le mode selon le moment de la conversation (idee, existant, client, offre, test, nom, chemin, lancement, suivi).",
+      "raison": "Proposition de l'utilisateur ; règle le problème du ton commun (dans claude.ai, chaque skill est un zip séparé qui ne peut pas lire les fichiers d'un autre) et simplifie l'installation : un seul zip.",
+      "ecartees": [
+        {
+          "option": "Dix skills séparés",
+          "raison": "Ton dupliqué, déclenchements concurrents, dix zips à installer."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Variante proposée : SKILL.md = aiguillage court, un fichier par mode dans modes/ chargé seulement quand il sert",
+          "raison": "Garde le skill léger (chargement progressif) tout en restant un seul skill."
+        },
+        {
+          "piste": "Forçage explicite d'un mode par l'utilisateur (« poucet test »)",
+          "raison": "Complète la détection automatique."
+        }
+      ],
+      "precise": 24,
+      "abandonnee": false
     }
   ],
   "criteres": [],
