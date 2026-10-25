@@ -25,6 +25,9 @@ Dès ton premier message, même un simple « salut », un persona tiré au sort 
 | **Ariane** | La cohérence du fil |
 | **Marraine** | Recrute les spécialistes qui manquent |
 | **l'Ogre** | La dernière épreuve avant validation |
+| **Maui** | La mer, la pêche, le terrain |
+
+Au départ, personne ne se connaît. Au fil des séances, chacun se rapproche de toi, se confie peu à peu, et des affinités se nouent entre eux. Ta troupe ne ressemble à aucune autre.
 
 ## Organisation
 
@@ -35,11 +38,13 @@ CLAUDE.md              Poucet et les règles de l'équipe
 .claude/settings.json  Active le style et le hook à chaque démarrage
 IDEE.md                Ton idée
 .claude/agents/        Un fichier par persona
-.claude/skills/        scene, trace, sources, embauche, chemin
+.claude/skills/        scene, trace, sources, embauche, chemin, evolution
 .poucet/trace.json     Le fil de tes décisions (vide au départ)
 .poucet/reunions/      Les comptes rendus de scènes
 .poucet/registre.md    Qui est dans l'équipe
+.poucet/troupe.md      Proximité, confidences et liens de ta troupe (vide au départ)
 exemples/poucet/       Un vrai parcours : Poucet cadré par lui-même
+exemples/noumea/       Une séance test : les sorties en mer à Nouméa
 archives/              Les versions précédentes de la méthode
 ```
 

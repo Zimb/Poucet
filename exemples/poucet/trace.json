@@ -1177,6 +1177,25 @@
       ],
       "pistes": [],
       "abandonnee": false
+    },
+    {
+      "n": 53,
+      "sujet": "equipe",
+      "decision": "La troupe s'enrichit au fil du temps : proximité avec le fondateur en cinq paliers, confidences révélées par paliers jusqu'au secret de chaque fiche, liens entre personas qui se nouent. Tout vit dans .poucet/troupe.md ; les fiches (avec leur secret) restent fixes. Sur main, personne ne se connaît. La séance test de Nouméa part dans exemples/noumea/.",
+      "raison": "Le fondateur : « comme si on rentrait dans l'intimité de chacun d'eux, qu'il y ait des affinités qui se créent ; le repo main doit être l'état où personne ne se connaît, et ensuite des liens se feront. »",
+      "ecartees": [
+        {
+          "option": "Évolution écrite dans les fiches elles-mêmes",
+          "raison": "Les fiches de main se saliraient ; un fichier de troupe séparé garde le socle propre."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Montrer les liens de la troupe en un coup d'œil (une carte des affinités)",
+          "raison": "Le fondateur voit la troupe vieillir avec lui."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],

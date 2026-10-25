@@ -1,42 +1,8 @@
 {
-  "projet": "Sorties en mer mutualisées à Nouméa",
-  "mode": "pour moi",
-  "idee_de_depart": "Une app Flutter qui permette de mutualiser les balades en mer, les sorties pêche, etc. à Nouméa.",
-  "etapes": [
-    {
-      "n": 1,
-      "sujet": "mode",
-      "decision": "Mode « pour moi » : le but du fondateur est d'abord de sortir en mer et de pêcher un gros poisson, pas de vivre de l'app.",
-      "raison": "Le fondateur : « J'aimerais trouver une sortie mer honnêtement et pêcher un gros poisson ! » Il n'a pas de bateau.",
-      "ecartees": [
-        {
-          "option": "Business",
-          "raison": "Aucun désir de revenu exprimé ; le besoin est personnel."
-        }
-      ],
-      "pistes": [
-        {
-          "piste": "Revenir au mode business si le test par messages attire des propriétaires",
-          "raison": "L'idée de mutualisation reste valable pour d'autres."
-        }
-      ],
-      "abandonnee": false
-    },
-    {
-      "n": 2,
-      "sujet": "equipe",
-      "decision": "Maui est embauché : la mer, la pêche, la météo marine et les usages du ponton.",
-      "raison": "Figurant entré trois fois dans les scènes ; le fondateur : « Oui, invite Maui ». Épreuve (préparer une sortie pêche depuis Nouméa) réussie sur les 5 critères.",
-      "ecartees": [
-        {
-          "option": "Le laisser figurant",
-          "raison": "Un figurant récurrent sans fiche finit par perdre sa voix."
-        }
-      ],
-      "pistes": [],
-      "abandonnee": false
-    }
-  ],
+  "projet": "",
+  "mode": "",
+  "idee_de_depart": "",
+  "etapes": [],
   "criteres": [],
   "decisions_par_defaut": []
 }
