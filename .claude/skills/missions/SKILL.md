@@ -17,7 +17,7 @@ Quand l'idée et le mode sont connus, adapte chaque mission à cette idée, en u
 
 Donne aussi à chaque mission un poids, 1 ou 2, selon le mode et l'idée : en mode « pour moi », la Fourmi, Boucle d'or et Tracassin (l'intérêt personnel) pèsent 2 ; en mode business, le Chat Botté, Tracassin et le Loup pèsent 2. Le fondateur peut changer les poids, et ça va dans la trace.
 
-Si l'angle d'un persona ne s'applique pas à l'idée, prends la variante de repli de sa fiche : un projet non lucratif donne à Tracassin un intérêt personnel à trouver, un projet sans mer donne à Maui un essai réel à obtenir. Ne marque `sans_objet` que si aucune variante n'a de sens, et le Chat Botté seulement en mode « pour moi » quand personne d'autre ne profitera du projet.
+Si l'angle d'un persona ne s'applique pas à l'idée, prends la variante de repli de sa fiche : un projet non lucratif donne à Tracassin un intérêt personnel à trouver, un projet qui ne sert qu'à une personne donne au Joueur de flûte une phrase pour le dire. Ne marque `sans_objet` que si aucune variante n'a de sens, et le Chat Botté seulement en mode « pour moi » quand personne d'autre ne profitera du projet.
 
 ## En cours
 
