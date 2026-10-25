@@ -1163,6 +1163,20 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 52,
+      "sujet": "technique",
+      "decision": "Le dépôt vit en direct : chaque changement de séance est poussé directement sur main, sans PR. Une branche main est créée avec tout le travail et devient la branche par défaut.",
+      "raison": "Le fondateur : « je veux que la modification se fasse en direct pour que le diff n'ait pas à être validé dans GitHub ».",
+      "ecartees": [
+        {
+          "option": "Une PR par séance",
+          "raison": "Le fondateur ne veut rien valider à la main."
+        }
+      ],
+      "pistes": [],
+      "abandonnee": false
     }
   ],
   "criteres": [],
