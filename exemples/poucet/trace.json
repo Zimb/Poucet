@@ -1055,6 +1055,179 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 46,
+      "sujet": "scenes",
+      "decision": "Claude ne parle jamais : chaque ligne de chaque réponse est dite par un personnage nommé, technique et comptes rendus compris. Si aucun persona n'a l'angle, un figurant des contes est inventé, avec son nom et son ton. Le sérieux, demandé par le fondateur, est dit par Poucet, en clair. Poucet reçoit une voix. Un hook UserPromptSubmit rappelle la règle à chaque message.",
+      "raison": "Troisième essai : Claude sortait du rôle pour les questions techniques et après les outils. Le fondateur : « J'aimerais que ce soit vraiment du rôle play, Claude ne parle pas, c'est toujours un personnage. »",
+      "ecartees": [
+        {
+          "option": "Sortie du rôle en clair, en tant qu'assistant, quand le fondateur demande d'être sérieux",
+          "raison": "Le fondateur veut toujours un personnage ; le sérieux passe par Poucet."
+        }
+      ],
+      "pistes": [],
+      "abandonnee": false
+    },
+    {
+      "n": 47,
+      "sujet": "scenes",
+      "decision": "Chaque persona devient un archétype appuyé, avec une façon de parler qu'aucun autre n'a (tutoiement ou vouvoiement, rythme, ponctuation, vocabulaire, signe distinctif). Un tableau « Les voix » dans CLAUDE.md garde les contrastes. Les tics de style sont permis, la phrase répétée non.",
+      "raison": "Le fondateur : « Stéréotype les personnages, archétype-les, ils ne doivent pas avoir le même ton. »",
+      "ecartees": [
+        {
+          "option": "Voix nuancées et proches d'un ton pro commun",
+          "raison": "Les personas se ressemblaient à la lecture."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Test de l'aveugle : masquer les noms d'une scène et vérifier qu'on reconnaît chaque voix",
+          "raison": "Mesure simple de la distinction des tons."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 48,
+      "sujet": "scenes",
+      "decision": "Le jeu de scène est validé : archétypes appuyés, toujours un personnage nommé, figurants inventés puis embauchés (Maui).",
+      "raison": "Premier essai sur une vraie idée (sorties en mer à Nouméa). Le fondateur : « Je valide le jeu de scène des acteurs ! »",
+      "ecartees": [],
+      "pistes": [],
+      "abandonnee": false
+    },
+    {
+      "n": 49,
+      "sujet": "angle",
+      "decision": "Poucet vise d'autres utilisateurs qui le forkent, et une grande troupe de personnages.",
+      "raison": "Le fondateur : « J'aimerais avoir un grand lot de personnages et j'espère que d'autres personnes le forkent. »",
+      "ecartees": [
+        {
+          "option": "Outil personnel seulement",
+          "raison": "Le fondateur veut des forks."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Réserve de personas hors de .claude/agents, que Marraine fait entrer à la demande",
+          "raison": "Garder la liste d'agents courte (hypothèse : chaque description d'agent coûte du contexte)."
+        },
+        {
+          "piste": "Bourse aux personas : les recrues des forks reviennent par PR",
+          "raison": "La troupe grandit avec la communauté."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 50,
+      "sujet": "technique",
+      "decision": "Proposition : les recrues naissent en direct pendant la séance, sans PR ; chaque fork récupère au démarrage la réserve de personas du dépôt d'origine (seulement la réserve, jamais CLAUDE.md ni les fiches locales). Les contributions venues des forks passent par le fondateur avant d'entrer dans la réserve partagée. En attente de l'accord du fondateur.",
+      "raison": "Le fondateur veut que les personas s'adaptent en direct sans attendre de PR, ou que les forks se mettent à jour depuis le dépôt dans Claude. Cassandre et le Loup refusent l'entrée sans relecture du texte d'inconnus dans les sessions de tous (injection de consignes).",
+      "ecartees": [
+        {
+          "option": "Contributions des forks fusionnées automatiquement dans la réserve partagée",
+          "raison": "N'importe qui pourrait glisser des consignes dans toutes les séances des forks."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Une branche main stable sur le dépôt d'origine, servie aux forks",
+          "raison": "La branche par défaut actuelle est une branche de travail."
+        }
+      ],
+      "abandonnee": true,
+      "raison_abandon": "Le fondateur ne veut pas de réserve partagée ni de projet collaboratif : chaque fork vit sa vie."
+    },
+    {
+      "n": 51,
+      "sujet": "equipe",
+      "decision": "Un socle commun de personas au départ de chaque fork ; Marraine recrute en direct, sans PR. Après chaque scène, la personnalité des personas qui ont parlé évolue d'une ligne au plus, d'après les réactions du fondateur, dans la section « Ce qui a bougé » de leur fiche. Le socle (angle, archétype, façon de parler) résiste et ne change que par un entretien avec accord explicite.",
+      "raison": "Le fondateur : « leur personnalité évolue à chaque prompt, avec le repo en cours forké (pas un projet collaboratif) […] mais avec une certaine résistance sur l'identité des personnages. »",
+      "ecartees": [
+        {
+          "option": "Réserve partagée synchronisée depuis le dépôt d'origine",
+          "raison": "Pas de projet collaboratif."
+        },
+        {
+          "option": "Réécriture libre de la fiche à chaque prompt",
+          "raison": "Les voix finiraient par se ressembler ; il faut une résistance."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Mesurer la dérive : comparer une scène du même persona au début et après vingt séances",
+          "raison": "Vérifier que la résistance tient."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 52,
+      "sujet": "technique",
+      "decision": "Le dépôt vit en direct : chaque changement de séance est poussé directement sur main, sans PR. Une branche main est créée avec tout le travail et devient la branche par défaut.",
+      "raison": "Le fondateur : « je veux que la modification se fasse en direct pour que le diff n'ait pas à être validé dans GitHub ».",
+      "ecartees": [
+        {
+          "option": "Une PR par séance",
+          "raison": "Le fondateur ne veut rien valider à la main."
+        }
+      ],
+      "pistes": [],
+      "abandonnee": false
+    },
+    {
+      "n": 53,
+      "sujet": "equipe",
+      "decision": "La troupe s'enrichit au fil du temps : proximité avec le fondateur en cinq paliers, confidences révélées par paliers jusqu'au secret de chaque fiche, liens entre personas qui se nouent. Tout vit dans .poucet/troupe.md ; les fiches (avec leur secret) restent fixes. Sur main, personne ne se connaît. La séance test de Nouméa part dans exemples/noumea/.",
+      "raison": "Le fondateur : « comme si on rentrait dans l'intimité de chacun d'eux, qu'il y ait des affinités qui se créent ; le repo main doit être l'état où personne ne se connaît, et ensuite des liens se feront. »",
+      "ecartees": [
+        {
+          "option": "Évolution écrite dans les fiches elles-mêmes",
+          "raison": "Les fiches de main se saliraient ; un fichier de troupe séparé garde le socle propre."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Montrer les liens de la troupe en un coup d'œil (une carte des affinités)",
+          "raison": "Le fondateur voit la troupe vieillir avec lui."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 54,
+      "sujet": "equipe",
+      "decision": "Deux recrues dans le socle : Tracassin (le nain de Grimm qui file la paille en or : l'argent vite et facile, dans la loi) et Titania (la reine des elfes : l'excellence, n'affirme que ce qu'elle peut établir, précieuse). Chacune a son secret ; Titania évite le regard de l'Âne.",
+      "raison": "Demande du fondateur : « un nain pour gagner de l'argent rapidement et facilement […] et une elfe qui donne l'impression d'avoir toujours raison et qui ne se trompe jamais, assez précieuse ». Épreuves réussies, 5/5 chacune.",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Titania : ajouter une licence, un extrait de scène et une section « quoi garder après le fork » au README",
+          "raison": "Son épreuve : sans licence, personne n'a le droit de réutiliser le dépôt."
+        }
+      ],
+      "abandonnee": false
+    },
+    {
+      "n": 55,
+      "sujet": "technique",
+      "decision": "Licence MIT, Copyright (c) 2026 Zimb : fork, modification et redistribution libres, mention de l'auteur original obligatoire.",
+      "raison": "Le fondateur : « Une mention de Zimb me suffirait, avec droit de modification et de fork, mais garder la création originale à mon pseudo. »",
+      "ecartees": [
+        {
+          "option": "GPL",
+          "raison": "Le fondateur ne demande pas que les forks restent libres, seulement la mention."
+        },
+        {
+          "option": "Pas de licence",
+          "raison": "Forker serait juridiquement interdit."
+        }
+      ],
+      "pistes": [],
+      "abandonnee": false
     }
   ],
   "criteres": [],

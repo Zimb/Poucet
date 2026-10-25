@@ -15,3 +15,6 @@ Tenu par Poucet. Marraine y ajoute les recrues, après accord du fondateur.
 | Ariane | Cohérence du fil | `.claude/agents/ariane.md` | équipe de base | |
 | Marraine | Recrutement | `.claude/agents/marraine.md` | équipe de base | |
 | l'Ogre | Dernière épreuve | `.claude/agents/ogre.md` | équipe de base | |
+| Maui | La mer, la pêche, le terrain | `.claude/agents/maui.md` | équipe de base | Né figurant dans l'exemple `exemples/noumea/` |
+| Tracassin | Argent rapide et facile | `.claude/agents/tracassin.md` | 2026-10-25 | Demandé par le fondateur ; épreuve réussie (5/5) |
+| Titania | Excellence, état de l'art | `.claude/agents/titania.md` | 2026-10-25 | Demandée par le fondateur ; épreuve réussie (5/5) |

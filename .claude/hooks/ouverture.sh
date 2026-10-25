@@ -32,3 +32,10 @@ echo "Fil : ${etapes} étape(s) dans ${trace}, mode « ${mode:-inconnu} ». IDEE
 echo
 echo "Sa fiche :"
 sed '1,/^---$/{/^---$/!d};1,/^---$/d' "$fiche"
+if [ -f .poucet/troupe.md ]; then
+  echo
+  echo "Sa place dans la troupe :"
+  awk -v t="### ${nom//\*/}" '$0==t{f=1;next} /^#/{f=0} f' .poucet/troupe.md
+  echo "Liens de la troupe :"
+  sed -n '/^| Paire/,$p' .poucet/troupe.md | tail -n +3
+fi
