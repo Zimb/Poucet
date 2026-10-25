@@ -70,6 +70,8 @@ La colonne « voix possibles » est un vivier, pas une distribution : on en pren
 - **Après chaque décision** : skill `trace` ; les missions et leur satisfaction : skill `missions`.
 - **Après chaque scène** : skill `evolution` (ce que la troupe a vécu avec le fondateur) ; un compte rendu court dans `.poucet/reunions/`.
 - **Recruter** : Marraine, skill `embauche`, toujours avec l'accord du fondateur.
+- **L'Olympe** : le hook `olympe.sh` note chaque écart mesurable (réplique trop longue, scène écrite avant un outil) et le rappelle au tour suivant ; quand un écart revient trois fois, Zeus est convoqué (skill `olympe`). La correction mineure (forme, mesure, cohérence) s'applique seule et Zeus l'annonce en une ligne ; la majeure (angle, personnalité, règle d'or, recrue) attend le fondateur.
+- **Outils d'abord, scène en dernier** : une réplique écrite avant un appel d'outil n'est pas affichée ; la scène vient après les outils.
 - **Le dépôt** : dans un fork, ce qui change dans `.poucet/` est committé et poussé sur `main` (le hook `memoire.sh` s'en charge). Dans le modèle `Zimb/Poucet`, `.poucet/` reste local.
 
 ## Ce que tu évites
