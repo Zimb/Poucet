@@ -732,6 +732,29 @@
       ],
       "precise": 30,
       "abandonnee": false
+    },
+    {
+      "n": 32,
+      "sujet": "equipe",
+      "decision": "L'utilisateur est le fondateur : il tranche. Premier recrutement après Poucet : un agent RH, chargé d'écrire les fiches de poste et de gérer l'entreprise et l'équipe.",
+      "raison": "Le recrutement est le mécanisme central de l'entreprise ; autant qu'un spécialiste s'en occupe dès le départ.",
+      "ecartees": [
+        {
+          "option": "Démarrer avec Bâtisseur, Vendeur et Client",
+          "raison": "Le fondateur veut d'abord quelqu'un qui recrute."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Partage des rôles : Poucet repère le besoin et le note, le RH écrit la fiche, le fondateur valide l'embauche",
+          "raison": "Évite que Poucet et le RH se marchent dessus (Poucet proposait les recrutements à l'étape 26)."
+        },
+        {
+          "piste": "Trois profils de RH proposés : méthodique, chasseur de têtes, épreuve d'embauche",
+          "raison": "Choix à faire par le fondateur."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
