@@ -1022,6 +1022,25 @@
       ],
       "pistes": [],
       "abandonnee": false
+    },
+    {
+      "n": 44,
+      "sujet": "scenes",
+      "decision": "Chaque persona reçoit un caractère et une façon de parler propres (registre, rythme, images, tutoiement ou vouvoiement, défaut), sans phrase fétiche. Aucun persona ne se présente, la narration ne les décrit pas. Poucet a sa propre voix, et des frottements entre personas sont nommés.",
+      "raison": "Demande du fondateur : « une vraie personnalité chaque personnage… une vraie manière de parler, pas de description au début ».",
+      "ecartees": [
+        {
+          "option": "Phrases fétiches par persona",
+          "raison": "Rendraient les scènes répétitives (étape 42)."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Test : sur une scène sans les noms, reconnaître qui parle",
+          "raison": "Mesure simple de la réussite des voix."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
