@@ -1097,6 +1097,29 @@
       "ecartees": [],
       "pistes": [],
       "abandonnee": false
+    },
+    {
+      "n": 49,
+      "sujet": "angle",
+      "decision": "Poucet vise d'autres utilisateurs qui le forkent, et une grande troupe de personnages.",
+      "raison": "Le fondateur : « J'aimerais avoir un grand lot de personnages et j'espère que d'autres personnes le forkent. »",
+      "ecartees": [
+        {
+          "option": "Outil personnel seulement",
+          "raison": "Le fondateur veut des forks."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Réserve de personas hors de .claude/agents, que Marraine fait entrer à la demande",
+          "raison": "Garder la liste d'agents courte (hypothèse : chaque description d'agent coûte du contexte)."
+        },
+        {
+          "piste": "Bourse aux personas : les recrues des forks reviennent par PR",
+          "raison": "La troupe grandit avec la communauté."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
