@@ -60,3 +60,7 @@ archives/              Les versions précédentes de la méthode
 
 - Fait : équipe de base, skills, trace, vérificateur de liens, exemple complet.
 - Reste à faire : tester sur de vraies idées ; mesurer Poucet contre Claude seul (même idée, jugée à l'aveugle) ; voir `.poucet/issues.md`.
+
+## Licence
+
+[MIT](LICENSE) © 2026 Zimb. Tu peux forker, modifier et redistribuer Poucet, à condition de garder la mention de l'auteur original et le texte de la licence.

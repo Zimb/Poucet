@@ -1210,6 +1210,24 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 55,
+      "sujet": "technique",
+      "decision": "Licence MIT, Copyright (c) 2026 Zimb : fork, modification et redistribution libres, mention de l'auteur original obligatoire.",
+      "raison": "Le fondateur : « Une mention de Zimb me suffirait, avec droit de modification et de fork, mais garder la création originale à mon pseudo. »",
+      "ecartees": [
+        {
+          "option": "GPL",
+          "raison": "Le fondateur ne demande pas que les forks restent libres, seulement la mention."
+        },
+        {
+          "option": "Pas de licence",
+          "raison": "Forker serait juridiquement interdit."
+        }
+      ],
+      "pistes": [],
+      "abandonnee": false
     }
   ],
   "criteres": [],
