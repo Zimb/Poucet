@@ -966,6 +966,25 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 41,
+      "sujet": "nom",
+      "decision": "Proposition : Poucet devient l'orchestrateur et le scribe ; les questions naïves passent à un nouveau persona, l'Âne (tiré du folklore : Peau d'Âne, les Musiciens de Brême, les fables de La Fontaine, et non le personnage de Shrek). En attente de l'accord du fondateur.",
+      "raison": "Le fondateur veut un orchestrateur et un « âne qui fait l'idiot » ; l'étape 31 laissait la séparation des rôles de Poucet ouverte (« pour le moment »).",
+      "ecartees": [
+        {
+          "option": "Reprendre Shrek ou son âne",
+          "raison": "Personnages protégés : le livre de William Steig (1990) est encore sous droit d'auteur, et les personnages du film appartiennent à DreamWorks. À éviter : le nom, le duo ogre vert et âne bavard, les références au film."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "L'Ogre en investisseur ou jury de validation, dernière épreuve de l'idée",
+          "raison": "Dans Le Petit Poucet, Poucet doit déjouer l'Ogre ; l'ogre du folklore (Perrault) est libre de droits."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
