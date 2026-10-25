@@ -615,6 +615,34 @@
       ],
       "note": "La tension avec l'étape 9 (équipe en v2) est levée : l'équipe devient un mode 'equipe' du skill poucet (étape 25).",
       "abandonnee": false
+    },
+    {
+      "n": 27,
+      "sujet": "equipe",
+      "decision": "Deux niveaux : l'entreprise (tous les spécialistes recrutés, elle ne fait que grandir) et l'équipe (les spécialistes actifs, qui change au fil du projet). Un nouveau spécialiste est recruté dans l'entreprise dès qu'on en a besoin. Les réunions permettent de consulter un spécialiste hors équipe sans l'y faire entrer.",
+      "raison": "Proposition de l'utilisateur. Répond aussi à la question du déclenchement : on recrute au besoin, pas à heure fixe.",
+      "ecartees": [
+        {
+          "option": "Une seule équipe qui grossit, avec un plafond",
+          "raison": "Remplacé par la séparation entreprise / équipe ; le plafond ne s'applique plus qu'à l'équipe active."
+        },
+        {
+          "option": "Revoir l'équipe à la fin de chaque session ou à chaque commit",
+          "raison": "On recrute au besoin."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Entreprise dans .poucet/entreprise/ (hors de .claude/agents/, pour ne pas charger tout le monde) ; équipe active dans .claude/agents/",
+          "raison": "Claude Code voit tous les agents de .claude/agents/ ; les inactifs doivent vivre ailleurs."
+        },
+        {
+          "piste": "Réunion menée par la session principale (le chef), qui interroge chaque participant tour à tour ; compte rendu dans .poucet/reunions/ et décisions dans trace.json",
+          "raison": "Les sous-agents ne peuvent pas se parler ni se lancer entre eux."
+        }
+      ],
+      "precise": 26,
+      "abandonnee": false
     }
   ],
   "criteres": [],
