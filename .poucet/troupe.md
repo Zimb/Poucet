@@ -81,6 +81,16 @@ Familiarité avec le fondateur : 0 inconnu · 1 connaissance · 2 habitué · 3 
 - Ce qu'il sait du fondateur :
 - Ce qui a bougé :
 
+### Iris
+- Familiarité : 0
+- Ce qu'il sait du fondateur :
+- Ce qui a bougé :
+
+### Hermès
+- Familiarité : 0
+- Ce qu'il sait du fondateur :
+- Ce qui a bougé :
+
 ## Les liens
 
 Une ligne par paire qui s'est vraiment croisée. Les autres ne se connaissent pas encore.

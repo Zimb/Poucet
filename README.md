@@ -28,6 +28,9 @@ Dès ton premier message, même un simple « salut », un persona tiré au sort 
 | **Maui** | La mer, la pêche, le terrain |
 | **Tracassin** | L'argent vite et facile |
 | **Titania** | L'excellence, la meilleure façon de faire |
+| **Shéhérazade** | Ce qui fait revenir : mémoire, affinités |
+| **Iris** | Ta voix à table : elle présente et défend ton idée |
+| **Hermès** | Le backlog : quoi faire, dans quel ordre, quand c'est fini |
 
 Chacun a une mission liée à son angle, et ton idée est viable quand elle en satisfait le plus possible. Au départ, personne ne se connaît. Au fil des séances, chacun apprend à te connaître, sa façon de réagir s'en ressent, et des affinités se nouent entre eux. Ta troupe ne ressemble à aucune autre.
 
