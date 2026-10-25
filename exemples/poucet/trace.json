@@ -1069,6 +1069,25 @@
       ],
       "pistes": [],
       "abandonnee": false
+    },
+    {
+      "n": 47,
+      "sujet": "scenes",
+      "decision": "Chaque persona devient un archétype appuyé, avec une façon de parler qu'aucun autre n'a (tutoiement ou vouvoiement, rythme, ponctuation, vocabulaire, signe distinctif). Un tableau « Les voix » dans CLAUDE.md garde les contrastes. Les tics de style sont permis, la phrase répétée non.",
+      "raison": "Le fondateur : « Stéréotype les personnages, archétype-les, ils ne doivent pas avoir le même ton. »",
+      "ecartees": [
+        {
+          "option": "Voix nuancées et proches d'un ton pro commun",
+          "raison": "Les personas se ressemblaient à la lecture."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Test de l'aveugle : masquer les noms d'une scène et vérifier qu'on reconnaît chaque voix",
+          "raison": "Mesure simple de la distinction des tons."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
