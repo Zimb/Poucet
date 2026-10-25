@@ -1289,6 +1289,24 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 60,
+      "sujet": "equipe",
+      "decision": "Chaque persona a une volonté (sa mission), des envies et des besoins, et ses moments : il pèse plus ou moins selon la phase (ouverture, exploration, cadrage, validation, code) et le mode. Les missions ont un poids de 1 ou 2. Marraine peut présenter une seule candidate à l'ouverture si le secteur est nouveau, sinon elle se tait.",
+      "raison": "Le fondateur : « Certains personnages sont plus importants ou présents selon les prompts et le début du projet. Marraine est présente au début pour essayer de présenter quelqu'un si c'est une idée nouvelle ou un secteur différent, mais pas nécessairement […] chacun a de la volonté, des envies, des besoins. »",
+      "ecartees": [
+        {
+          "option": "Toutes les missions au même poids",
+          "raison": "Le poids dépend de la phase et du mode."
+        },
+        {
+          "option": "Une recrue à chaque début de séance",
+          "raison": "Trop de personnages."
+        }
+      ],
+      "pistes": [],
+      "abandonnee": false
     }
   ],
   "criteres": [],
