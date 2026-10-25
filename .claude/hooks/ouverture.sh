@@ -20,12 +20,12 @@ etapes=${etapes:-0}
 mode=$(sed -n 's/.*"mode"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' "$trace" 2>/dev/null | head -n1)
 
 # Candidats : toutes les fiches, recrues comprises.
-# Sans fil, Ariane et l'Ogre n'ont rien à relire ni à éprouver ; en mode « pour moi », le Chat Botté se tait.
+# Sans fil, Ariane et l'Ogre n'ont rien à relire ni à éprouver. Zeus veille sur la troupe, il n'ouvre pas une idée.
 candidats=()
 for f in .claude/agents/*.md; do
   nom=$(basename "$f" .md)
   if [ "$etapes" -eq 0 ] && { [ "$nom" = ariane ] || [ "$nom" = ogre ]; }; then continue; fi
-  case "$mode" in *moi*) [ "$nom" = chat-botte ] && continue ;; esac
+  [ "$nom" = zeus ] && continue
   candidats+=("$f")
 done
 [ ${#candidats[@]} -eq 0 ] && exit 0

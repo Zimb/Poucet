@@ -34,6 +34,7 @@ Dès ton premier message, même un simple « salut », un persona tiré au sort 
 | **le Joueur de flûte** | Le groupe : qui tient toutes les clés, qui part de son côté |
 | **Renart** | Le détournement : l'idée prise à l'envers |
 | **le Grillon parlant** | La conscience : ceux que l'idée touche sans être là, l'éthique |
+| **Zeus** | La direction : qui fait quoi, la cohérence de toute la troupe |
 
 Chacun a une mission liée à son angle, et ton idée est viable quand elle en satisfait le plus possible. Au départ, personne ne se connaît. Au fil des séances, chacun apprend à te connaître, sa façon de réagir s'en ressent, et des affinités se nouent entre eux. Ta troupe ne ressemble à aucune autre.
 
