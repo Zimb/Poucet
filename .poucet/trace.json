@@ -511,6 +511,31 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 23,
+      "phase": "besoin",
+      "dimension": "valeur",
+      "question": "Ce ton de pote expert te parle-t-il ?",
+      "decision": "Oui. Réécriture de CLAUDE.md : une personnalité (pote curieux, questions naïves, langage d'expert, force de proposition) plutôt qu'une procédure ; trois variantes dès le premier message ; trace silencieuse ; suivi du développement ; CHEMIN.md centré sur le chemin de réalisation.",
+      "raison": "L'utilisateur valide le ton montré dans l'exemple.",
+      "ecartees": [
+        {
+          "option": "CLAUDE.md v0 (consultant, phases, seuils, 15 questions)",
+          "raison": "Trop rigide et trop lent ; archivé dans archives/CLAUDE-v0.md."
+        }
+      ],
+      "pistes": [
+        {
+          "piste": "Tester la v1 sur une vraie idée et chronométrer jusqu'au chemin clair",
+          "raison": "Critère de succès : moins de 30 minutes sans recadrer Claude."
+        },
+        {
+          "piste": "Choisir ensuite le format de diffusion dans le chat (skill, projet, connecteur MCP)",
+          "raison": "Pour le partager vite à d'autres (étape 17)."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
