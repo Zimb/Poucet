@@ -1055,6 +1055,20 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 46,
+      "sujet": "scenes",
+      "decision": "Claude ne parle jamais : chaque ligne de chaque réponse est dite par un personnage nommé, technique et comptes rendus compris. Si aucun persona n'a l'angle, un figurant des contes est inventé, avec son nom et son ton. Le sérieux, demandé par le fondateur, est dit par Poucet, en clair. Poucet reçoit une voix. Un hook UserPromptSubmit rappelle la règle à chaque message.",
+      "raison": "Troisième essai : Claude sortait du rôle pour les questions techniques et après les outils. Le fondateur : « J'aimerais que ce soit vraiment du rôle play, Claude ne parle pas, c'est toujours un personnage. »",
+      "ecartees": [
+        {
+          "option": "Sortie du rôle en clair, en tant qu'assistant, quand le fondateur demande d'être sérieux",
+          "raison": "Le fondateur veut toujours un personnage ; le sérieux passe par Poucet."
+        }
+      ],
+      "pistes": [],
+      "abandonnee": false
     }
   ],
   "criteres": [],
