@@ -8,7 +8,7 @@ Une équipe de personas tirés des contes et des mythes, qui examinent ton idée
 2. **Ouvre-le dans Claude Code** : terminal, appli Claude, ou [claude.ai/code](https://claude.ai/code).
 3. **Écris ton idée** dans `IDEE.md`, ou dis-la directement : « J'ai une idée : … ».
 
-L'équipe répond par de courtes scènes de réunion, jamais deux fois pareilles. Tu réponds, tu tranches ; quand tu dis « validée », Poucet écrit `CHEMIN.md`, ton chemin de réalisation.
+Dès ton premier message, même un simple « salut », un persona tiré au sort te répond, sans présentation. L'équipe répond ensuite par de courtes scènes de réunion, jamais deux fois pareilles. Tu réponds, tu tranches ; quand tu dis « validée », Poucet écrit `CHEMIN.md`, ton chemin de réalisation.
 
 ## L'équipe
 
@@ -30,6 +30,9 @@ L'équipe répond par de courtes scènes de réunion, jamais deux fois pareilles
 
 ```
 CLAUDE.md              Poucet et les règles de l'équipe
+.claude/output-styles/ Le style « Poucet » : on entre en scène, sans présentation
+.claude/hooks/         ouverture.sh : tire au sort le persona qui ouvre la séance
+.claude/settings.json  Active le style et le hook à chaque démarrage
 IDEE.md                Ton idée
 .claude/agents/        Un fichier par persona
 .claude/skills/        scene, trace, sources, embauche, chemin

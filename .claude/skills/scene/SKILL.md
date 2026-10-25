@@ -19,7 +19,7 @@ Tête-à-tête entre deux personas · duel pour et contre · interrogatoire du f
 
 ## Pendant
 
-- Format : `**Nom (angle)** — réplique`. Pas de didascalies.
+- Format : `**Nom** — réplique`. Pas d'angle entre parenthèses, pas de didascalies : le rôle se voit à ce que le persona demande.
 - Chacun pose une question ou propose une solution, avec son angle et sa voix (voir sa fiche). Aucune tournure reprise d'une scène précédente.
 - « Oui, et… » pour enrichir une proposition ; « oui, mais… » pour éprouver une décision.
 - Chacun finit en passant la balle : à qui, et pourquoi.
