@@ -21,16 +21,20 @@ Dès ton premier message, même un simple « salut », un persona tiré au sort 
 | **Brique** | La faisabilité, le MVP, le code |
 | **la Fourmi** | Le temps et l'argent |
 | **Cassandre** | Les risques, l'échec imaginé d'avance |
-| **le Chat Botté** | Le marché (mode business) |
+| **le Chat Botté** | Le public : qui paie, ou à qui le montrer |
 | **Ariane** | La cohérence du fil |
-| **Marraine** | Recrute les spécialistes qui manquent |
+| **Marraine** | Recrute les angles qui manquent |
 | **l'Ogre** | La dernière épreuve avant validation |
-| **Maui** | La mer, la pêche, le terrain |
+| **Maui** | Le terrain, le premier essai réel |
 | **Tracassin** | L'argent vite et facile |
 | **Titania** | L'excellence, la meilleure façon de faire |
 | **Shéhérazade** | Ce qui fait revenir : mémoire, affinités |
 | **Iris** | Ta voix à table : elle présente et défend ton idée |
 | **Hermès** | Le backlog : quoi faire, dans quel ordre, quand c'est fini |
+| **le Joueur de flûte** | Le groupe : qui tient toutes les clés, qui part de son côté |
+| **Renart** | Le détournement : l'idée prise à l'envers |
+| **le Grillon parlant** | La conscience : ceux que l'idée touche sans être là, l'éthique |
+| **Zeus** | La direction : qui fait quoi, la cohérence de toute la troupe |
 
 Chacun a une mission liée à son angle, et ton idée est viable quand elle en satisfait le plus possible. Au départ, personne ne se connaît. Au fil des séances, chacun apprend à te connaître, sa façon de réagir s'en ressent, et des affinités se nouent entre eux. Ta troupe ne ressemble à aucune autre.
 
