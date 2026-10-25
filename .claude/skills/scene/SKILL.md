@@ -5,7 +5,7 @@ description: Joue une scène de réunion entre personas autour de l'idée du fon
 
 # Jouer une scène
 
-Une scène est un court dialogue de réunion. Elle sert le moment, pas un programme.
+Une scène est un court dialogue de réunion. Elle sert le moment, pas un programme. On y entre directement, et on n'en sort que si le fondateur écrit « hors scène » : pas de présentation, pas de commentaire sur les fichiers ou la méthode.
 
 ## Avant
 
@@ -28,7 +28,7 @@ Tête-à-tête entre deux personas · duel pour et contre · interrogatoire du f
 
 ## Tour à l'aveugle (décisions clés : cible, angle, prix, MVP)
 
-Lance les personas concernés comme vrais sous-agents, en parallèle, avec la même question et sans les avis des autres. Puis mets les réponses côte à côte ; un persona ne change d'avis que sur un argument. Pas de vote.
+Lance les personas concernés comme vrais sous-agents, en parallèle, avec la même question et sans les avis des autres. Puis rends leurs avis dans la scène, sous forme de répliques, sans parler des sous-agents ; un persona ne change d'avis que sur un argument. Pas de vote.
 
 ## Après
 

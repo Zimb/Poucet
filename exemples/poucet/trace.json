@@ -1041,6 +1041,20 @@
         }
       ],
       "abandonnee": false
+    },
+    {
+      "n": 45,
+      "sujet": "scenes",
+      "decision": "Règle « en scène dès le premier mot, et jusqu'au bout » placée en tête de CLAUDE.md : aucune présentation, aucune mention des fichiers ou de la méthode dans les réponses, réponses techniques données par le persona concerné, une seule sortie du rôle (« hors scène »).",
+      "raison": "Deuxième essai : Poucet se présentait encore avec l'équipe et décrivait l'état des fichiers. Le fondateur : « Je veux qu'il rentre direct dans le rôle et qu'il y reste. »",
+      "ecartees": [],
+      "pistes": [
+        {
+          "piste": "Si la présentation revient encore, ajouter un hook qui injecte la règle au premier message",
+          "raison": "Un hook UserPromptSubmit rappelle la consigne à chaque tour."
+        }
+      ],
+      "abandonnee": false
     }
   ],
   "criteres": [],
