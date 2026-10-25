@@ -1228,6 +1228,20 @@
       ],
       "pistes": [],
       "abandonnee": false
+    },
+    {
+      "n": 56,
+      "sujet": "technique",
+      "decision": "Les séances de développement de Poucet travaillent directement sur main, sans branche intermédiaire.",
+      "raison": "Le fondateur : « tu peux pas te mettre sur la bonne branche ? »",
+      "ecartees": [
+        {
+          "option": "Branche de session recopiée sur main",
+          "raison": "Double travail inutile."
+        }
+      ],
+      "pistes": [],
+      "abandonnee": false
     }
   ],
   "criteres": [],
